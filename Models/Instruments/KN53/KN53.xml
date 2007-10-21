@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>KN53.ac</path>
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>NavVol</object-name>
+  <property>instrumentation/kn53/navvol-norm</property>
+  <factor>270</factor>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0.031</y-m>
+   <z-m>0.01</z-m>  
+  </center>
+ </animation>                                                              
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavVolDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kn53/navvol-norm</property>
+    <step type="double">-0.1</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavVolUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kn53/navvol-norm</property>
+    <step type="double">0.1</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>NavSwap</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-swap</command>
+    <property>/instrumentation/nav[1]/frequencies/selected-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+   </binding>                             
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavOuterUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+    <step type="double">1</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavOuterDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+    <step type="double">-1</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavInnerUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+    <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavInnerDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+    <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+
+</PropertyList>

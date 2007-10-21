@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim>
+
+    <author>BARANGER Emmanuel (3D), Jon Stockill (FDM, Panel, texture)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
+                    
+
+    <startup>
+      <splash-texture>Aircraft/Grob-G115/g115-splash.rgb</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Grob-G115/Sounds/g115-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Grob-G115/Models/g115.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+         <x-offset-m archive="y"> -0.237 </x-offset-m>	<!-- Right -->
+         <y-offset-m archive="y">  0.291 </y-offset-m>	<!-- Up    -->
+         <z-offset-m archive="y"> -1.172 </z-offset-m>	<!-- Back  -->
+         <pitch-offset-deg>0</pitch-offset-deg>
+      </config>
+    </view>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/g115-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <g115>
+      <file>Aircraft/Grob-G115/Nasal/doors.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/g115.nas</file>
+    </g115>
+  </nasal>
+  
+</PropertyList>

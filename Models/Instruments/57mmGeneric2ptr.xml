@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>57mmGeneric2ptr.ac</path>
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>PtrL</object-name>
+  <object-name>PtrTipL</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <factor>120</factor>
+  <axis> 
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>-0.02</y-m>
+   <z-m>0</z-m>  
+  </center>
+ </animation>         
+ 
+ <animation> 
+  <type>rotate</type>
+  <object-name>PtrR</object-name>
+  <object-name>PtrTipR</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <factor>120</factor>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0.02</y-m>
+   <z-m>0</z-m>  
+  </center>
+ </animation>         
+ 
+</PropertyList>

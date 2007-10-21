@@ -1,0 +1,944 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>GrobInterior.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ThrottleLever</object-name>
+  <object-name>ThrottleCap</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <min-deg>-70</min-deg>
+  <max-deg>0</max-deg>
+  <factor>-70</factor>
+  <center>
+   <x-m>0.20</x-m>
+   <y-m>-0.06</y-m>
+   <z-m>-0.19</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>ThrottleUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/throttle</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>ThrottleDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/throttle</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PropLever</object-name>
+  <object-name>PropCap</object-name>
+  <property>controls/engines/engine[0]/propeller-pitch</property>
+  <min-deg>-70</min-deg>
+  <max-deg>0</max-deg>
+  <factor>-70</factor>
+  <center>
+   <x-m>0.20</x-m>
+   <y-m>-0.06</y-m>
+   <z-m>-0.19</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>PropUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/propeller-pitch</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>PropDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>MixLever</object-name>
+  <object-name>MixCap</object-name>
+  <property>controls/engines/engine[0]/mixture</property>
+  <min-deg>-70</min-deg>
+  <max-deg>0</max-deg>
+  <factor>-70</factor>
+  <center>
+   <x-m>0.20</x-m>
+   <y-m>-0.06</y-m>
+   <z-m>-0.19</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>MixtureUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/mixture</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>MixtureDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/mixture</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation> <type>translate</type> <visible>true</visible>
+  <object-name>TrimIndicator</object-name>
+  <property>controls/flight/elevator-trim</property>
+  <factor>0.03</factor>
+  <axis>
+   <x>-0.06</x>
+   <y>0</y>
+   <z>0.0175</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TrimUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/flight/elevator-trim</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TrimDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/flight/elevator-trim</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>TankSelect</object-name>
+  <property>controls/fuel/switch-position</property>
+  <factor>90</factor>
+  <offset>0</offset>
+  <center>
+   <x-m>0.2</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.06</z-m>
+  </center>
+  <axis>
+   <x>-0.005587</x>
+   <y>0</y>
+   <z>-0.019204</z>
+  </axis>
+ </animation>
+                                                                
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TankNone</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/fuel/switch-position</property>
+     <value type="int">0</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TankLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/fuel/switch-position</property>
+     <value type="int">1</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TankBoth</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/fuel/switch-position</property>
+     <value type="int">2</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TankRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/fuel/switch-position</property>
+     <value type="int">3</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>StickL</object-name>
+  <object-name>GripL</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-25</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>-0.28</y-m>
+   <z-m>-0.325</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>StickR</object-name>
+  <object-name>GripR</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-25</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0.28</y-m>
+   <z-m>-0.325</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>StickL</object-name>
+   <object-name>GripL</object-name>
+   <property>controls/flight/elevator</property>
+   <factor>-25</factor>
+  <center>
+   <x-m>0.45</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.325</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>StickR</object-name>
+  <object-name>GripR</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>-25</factor>
+  <center>
+   <x-m>0.45</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.325</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>BrakeLever</object-name>
+  <property>controls/gear/brake-parking</property>
+  <factor>45</factor>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m>0.37</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>ParkBrakeOn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/gear/brake-parking</property>
+     <step type="double">0.1</step>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>ParkBrakeOff</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/gear/brake-parking</property>
+     <step type="double">-0.1</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>BlowerLever</object-name>
+  <property>controls/heater/blower</property>
+  <factor>45</factor>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m>-0.38</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>BlowerUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/heater/blower</property>
+     <step type="double">0.1</step>
+     <min>0</min>
+     <max>1</max>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>BlowerDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/heater/blower</property>
+     <step type="double">-0.1</step>
+     <min>0</min>
+     <max>1</max>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>rotate</type>
+  <object-name>TempLever</object-name>
+  <property>controls/heater/temp</property>
+  <factor>45</factor>
+  <center>
+   <x-m>-0.06</x-m>
+   <y-m>-0.38</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>-1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TempUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/heater/temp</property>
+     <step type="double">0.1</step>
+     <min>0</min>
+     <max>1</max>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>TempDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/heater/temp</property>
+     <step type="double">-0.1</step>
+     <min>0</min>
+     <max>1</max>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FlapIndicator</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>-0.01</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.11</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FlapSwitch</object-name>
+  <property>controls/flight/flaps</property>
+  <factor>30</factor>
+  <center>
+   <x-m>-0.01</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.11</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>FlapsUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/flight/flaps</property>
+     <value type="double">0.0</value>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>FlapsTO</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/flight/flaps</property>
+     <value type="double">0.25</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>FlapsLand</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/flight/flaps</property>
+     <value type="double">0.75</value>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>FlapsFull</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/flight/flaps</property>
+     <value type="double">1.0</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>AlternAir</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/anti-ice/carb-heat</property>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <visible>true</visible>
+  <object-name>AlternAir</object-name>
+  <property>/controls/anti-ice/carb-heat</property>
+  <factor>0.01</factor>
+  <axis>
+   <x>1.7</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FuelCock</object-name>
+  <property>controls/fuel/fuelcock</property>
+  <factor>90</factor>
+  <center>
+   <x-m>0.71</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>FuelCock</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/fuel/fuelcock</property>
+   </binding>          
+  </action>
+ </animation>
+
+                                    
+ <model>
+  <name>Compass</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/MagneticCompass/MagneticCompass.xml</path>
+  <offsets>
+   <x-m>0.01</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>0.275</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>WarningPanel</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/WarningPanel/WarningPanel.xml</path>
+  <offsets>
+   <x-m>0.03</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>0.263</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ALT1</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/Altimeter/Altimeter.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.395</y-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>AI1</name>
+  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.245</y-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>GPS</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/LX500/LX500.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.155</y-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ENG</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/MPFuel/MPFuel.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.125</y-m>
+   <z-m>0.177</z-m>
+   </offsets>
+ </model>
+
+ <model>
+  <name>ASI</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/ASI/ASI.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.215</y-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>AI2</name>
+  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.305</y-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ALT2</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/Altimeter/Altimeter.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.335</y-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>VOR</name>
+  <path>Aircraft/Instruments-3d/vor/vor.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.155</y-m>
+   <z-m>0.087</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>RPM</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/RPM/RPM.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.125</y-m>
+   <z-m>0.087</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>TC</name>
+  <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.215</y-m>
+   <z-m>0.087</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ADF</name>
+  <path>Aircraft/Instruments-3d/adf/adf.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.305</y-m>
+   <z-m>0.087</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>VSI</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/VSI/VSI.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.395</y-m>
+   <z-m>0.087</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>EGT</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/EGT-OAT/EGT-OAT.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.354</y-m>
+   <z-m>0.103</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>OIL</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/OilGauge/OilGauge.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.292</y-m>
+   <z-m>0.103</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>CHT</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/FP-CHT/FP-CHT.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.230</y-m>
+   <z-m>0.103</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>BATT</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/BatteryGauge/BatteryGauge.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.292</y-m>
+   <z-m>0.041</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>FUEL</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/FuelGauge/FuelGauge.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.230</y-m>
+   <z-m>0.041</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>AudioPanel</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/KMA26/KMA26.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>0.206</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>NavComm</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/KX155A/KX155A.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>0.153</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Nav</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/KN53/KN53.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>0.119</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Transponder</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/KT76A/KT76A.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.015</y-m>
+   <z-m>0.077</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>UHF</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/UHFRadio/UHFRadio.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>-0.0485</y-m>
+   <z-m>0.0365</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>G</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/GMeter/GMeter.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.025</y-m>
+   <z-m>0.036</z-m>
+  </offsets>
+ </model>
+
+
+
+ <model>
+  <name>Switches</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/SwitchPanel/SwitchPanel.xml</path>
+  <offsets>
+   <x-m>0.040</x-m>
+   <y-m>-0.030</y-m>
+   <z-m>-0.047</z-m>
+   <pitch-deg>-11.31</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Switches</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/MiniPanel.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.125</y-m>
+   <z-m>0.020</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>DME</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/DME/DME.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.305</y-m>
+   <z-m>0.020</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ELT</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/ELT/ELT.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0.413</y-m>
+   <z-m>0.020</z-m>
+  </offsets>
+ </model>
+
+</PropertyList>

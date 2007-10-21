@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>KX155A.ac</path>
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>CommVol</object-name>
+  <property>instrumentation/kx155a/commvol-norm</property>
+  <factor>270</factor>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>-0.063</y-m>
+   <z-m>0.0125</z-m>  
+  </center>
+ </animation>                                                              
+                                    
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>CommVolDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kx155a/commvol-norm</property>
+    <step type="double">-0.1</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>CommVolUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kx155a/commvol-norm</property>
+    <step type="double">0.1</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>CommSwap</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-swap</command>
+    <property>/instrumentation/comm/frequencies/selected-mhz</property>
+    <property>/instrumentation/comm/frequencies/standby-mhz</property>
+   </binding>                             
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>CommOuterUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/comm/frequencies/standby-mhz</property>
+    <step type="double">1</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>CommOuterDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/comm/frequencies/standby-mhz</property>
+    <step type="double">-1</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>CommInnerUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/comm/frequencies/standby-mhz</property>
+    <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>CommInnerDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/comm/frequencies/standby-mhz</property>
+    <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>NavVol</object-name>
+  <property>instrumentation/kx155a/navvol-norm</property>
+  <factor>270</factor>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0.0145</y-m>
+   <z-m>0.0125</z-m>  
+  </center>
+ </animation>                                                              
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavVolDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kx155a/navvol-norm</property>
+    <step type="double">-0.1</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavVolUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kx155a/navvol-norm</property>
+    <step type="double">0.1</step>
+    <min>0</min>
+    <max>1</max>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>NavSwap</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-swap</command>
+    <property>/instrumentation/nav/frequencies/selected-mhz</property>
+    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+   </binding>                             
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavOuterUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <step type="double">1</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavOuterDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <step type="double">-1</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavInnerUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/comm/frequencies/standby-mhz</property>
+    <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>NavInnerDn</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>                        
+
+
+</PropertyList>

@@ -1,0 +1,317 @@
+<!-- Grob 115E
+     3D model by Emmanuel BARANGER
+     FDM by Jon Stockill -->
+
+<airplane mass="1518">
+
+<!-- Pilot, copilot, baggage -->
+<weight 
+   x="1.3" y="-.265" z="-0.107" 
+   mass-prop="/sim/weight[0]/weight-lb"/>
+<weight 
+   x="1.3" y=".265" z="-0.107" 
+   mass-prop="/sim/weight[1]/weight-lb"/>
+<weight 
+   x="0.55" y="0" z="-0.3" 
+   mass-prop="/sim/weight[2]/weight-lb"/>
+
+<!-- Approach configuration -->
+<approach 
+   speed="55" 
+   aoa="14" 
+   fuel="0.2">
+  <control-setting 
+     axis="/controls/engines/engine[0]/throttle" 
+     value="0.2"/>
+  <control-setting 
+     axis="/controls/engines/engine[0]/mixture" 
+     value="1.0"/>
+  <control-setting 
+     axis="/controls/flight/flaps" 
+     value="0.75"/>
+  <solve-weight idx="0" weight="170"/>
+  <solve-weight idx="1" weight="170"/>
+  <solve-weight idx="2" weight="40"/>
+</approach>
+
+<!-- Cruise configuration -->
+<cruise 
+   speed="124" 
+   alt="5000" 
+   fuel="0.5">
+  <control-setting 
+     axis="/controls/engines/engine[0]/throttle" 
+     value="0.75"/>
+  <control-setting 
+     axis="/controls/engines/engine[0]/mixture" 
+     value="0.6"/>
+  <control-setting 
+     axis="/controls/flight/flaps" 
+     value="0.0"/>
+  <solve-weight idx="0" weight="170"/>
+  <solve-weight idx="1" weight="170"/>
+  <solve-weight idx="2" weight="40"/>
+</cruise>
+
+<cockpit x="-1.03" y="0.26" z="0.30"/>
+
+<!-- Cowl & Windshield 
+     tube dimensions : a(0.072 x 0.073) b(1.084 x 0.751) -->
+<fuselage 
+   ax="3.220" ay="0" az="-1.225" 
+   bx="1.791" by="0" bz="-.242"
+   width="1.065" 
+   taper="0.2" 
+   midpoint="1"
+   cx="0.805" cz="1.409"
+   idrag="1"/>
+
+<!-- Front glass 
+     tube dimensions : a(1.084 x 0.751) b(1.084 x 1.182) -->
+<fuselage 
+   ax="1.791" ay="0" az="-.242"
+   bx=".711" by="0" bz="-.030"
+   width="1.084" 
+   taper="0.637" 
+   midpoint="1"
+   cx="1.281" cy="1.090" 
+   idrag="1"/>
+
+<!-- Cockpit 
+     tube dimensions : a(1.084 x 1.182) b(1.069 x 0.986) -->
+<fuselage 
+   ax=".711" ay="0" az="-.030"
+   bx="0" by="0" bz="-.043"
+   width="1.084" 
+   taper="0.834" 
+   midpoint="0"
+   cx="1.281" cy="1.090" 
+   idrag="1"/>
+
+<!-- Rear glass 
+     tube dimensions : a(1.069 x 0.986) b(0.718 x 0.722) -->
+<fuselage 
+   ax="0" ay="0" az="-.043"
+   bx="-.758" by="0" bz="-.079"
+   width="1.069" 
+   taper="0.672" 
+   midpoint="0"
+   idrag="1"/>
+
+<!-- Tail 
+     tube dimensions : a(0.718 x 0.722) b(0.164 x 0.404)-->
+<fuselage 
+   ax="-.758" ay="0" az="-.079"
+   bx="-2.739" by="0" bz="-.085"
+   width="0.718" 
+   taper="0.228" 
+   midpoint="0"
+   idrag="1"/>
+
+<!-- Nose wheel
+     tube dimensions : ab(0.214 x 0.236) -->
+<fuselage 
+   ax="2.487" ay="0" az="-1"
+   bx="1.833" by="0" bz="-1"
+   width="0.225" 
+   taper="1" 
+   midpoint="1"
+   idrag="1"/>
+
+<!-- Left wheel
+     tube dimensions : ab(0.214 x 0.236) -->
+<fuselage
+   ax=".852" ay="-1.013" az="-1"
+   bx=".227" by="-1.013" bz="-1"
+   width=".225" 
+   taper="1" 
+   midpoint="1"
+   idrag="1"/>
+
+<!-- Right wheel
+     tube dimensions : ab(0.214 x 0.236) -->
+<fuselage
+   ax=".852" ay="1.013" az="-1"
+   bx=".227" by="1.013" bz="-1"
+   width=".225" 
+   taper="1" 
+   midpoint="1"
+   idrag="1"/>
+
+<wing 
+   x="1.0" y="0.50" z="-0.6" 
+   taper="0.6678" 
+   incidence="2.0"
+   twist="-4"
+   length="4.417"
+   chord="1.433" 
+   sweep="0.0" 
+   dihedral="5.0" 
+   camber="0.15">
+  <stall 
+     aoa="20" 
+     width="1.0" 
+     peak="1.5"/>
+  <flap0 
+     start="0.0498"
+     end="0.6113" 
+     lift="1.4" 
+     drag="1.5"/>
+  <flap1 
+     start="0.6113" 
+     end="0.9701" 
+     lift="1.4" 
+     drag="1.1"/>
+  <control-input 
+     axis="/controls/flight/flaps" 
+     control="FLAP0"/>
+  <control-speed 
+     control="FLAP0" 
+     transition-time="5"/>
+  <control-input 
+     axis="/controls/flight/aileron" 
+     control="FLAP1" 
+     split="true"/>
+  <control-input 
+     axis="/controls/flight/aileron-trim" 
+     control="FLAP1" 
+     split="true"/>
+  <control-output 
+     control="FLAP0" 
+     prop="/surface-positions/flap-pos-norm"/>
+  <control-output 
+     control="FLAP1" 
+     side="left"
+     prop="/surface-positions/left-aileron-pos-norm"/>
+  <control-output 
+     control="FLAP1" 
+     side="right"
+     prop="/surface-positions/right-aileron-pos-norm"/>
+</wing>
+
+<hstab 
+   x="-3.000" y="-0.130" z="0.0" 
+   taper="0.7269" 
+   effectiveness="3.0" 
+   incidence="0" 
+   length="1.620" 
+   chord="0.901" 
+   sweep="5.5">
+  <stall 
+     aoa="20" 
+     width="4" 
+     peak="1.5"/>
+  <flap0 start="0" end="1" lift="2.0" drag="1.1" effectiveness="2"/>
+  <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+  <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+  <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+</hstab>
+
+<vstab 
+   x="-2.553" y="0" z=".126" 
+   taper=".375" 
+   effectiveness="3.0"
+   length="1.101" 
+   chord="1.6" 
+   sweep="34.0">
+  <stall aoa="14" width="3" peak="1.5"/>
+  <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+  <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+  <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+  <control-output control="FLAP0"	 prop="/surface-positions/rudder-pos-norm"
+		  min="1" max="-1"/>
+</vstab>
+
+  <!-- engine:    Lycoming AEIO-360
+       propeller: Hoffmann HO-V343
+  =================================================================================
+  -->
+  <propeller 
+        radius="0.915"
+	cruise-speed="124"
+	cruise-rpm="2100"
+	cruise-alt="5000" 
+	cruise-power="150"
+	takeoff-power="200" 
+	takeoff-rpm="2700"
+	x="3.0" y="0.0" z="-0.3" 
+	mass="325" 
+	moment="3.6" >
+<!-- Engine now correct for AEIO360-->
+    <piston-engine 
+        eng-rpm="2700" 
+	eng-power="200"
+        displacement="361" 
+	compression="8.5"/>
+    <actionpt 
+        x="3.676" 
+	y="0.0" 
+	z="-.177" />
+    <control-input 
+        control="THROTTLE" 
+	axis="/controls/engines/engine[0]/throttle" />
+    <control-input 
+        control="STARTER" 
+	axis="/controls/engines/engine[0]/starter" />
+    <control-input 
+        control="MAGNETOS" 
+	axis="/controls/engines/engine[0]/magnetos" />
+    <control-input
+        control="MIXTURE"
+	axis="/controls/engines/engine[0]/mixture" />
+  </propeller>
+  
+<!-- Nose wheel -->
+<gear 
+   x="2.789" y="0" z="-1.397" 
+   compression=".15" 
+   spring=".8"
+   on-solid="1"
+   sfric="1"
+   dfric="1">
+  <control-input 
+      axis="/controls/flight/rudder" 
+      control="STEER"
+      src0="-1.0" src1="1.0"
+      dst0="-.25" dst1=".25"/>
+</gear>
+
+<!-- Left wheel -->
+<gear 
+   x="1.030" y="1.281" z="-1.398" 
+   compression=".1" 
+   spring=".8" 
+   on-solid="1" >
+  <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+</gear>
+
+<!-- Right wheel -->
+<gear 
+   x="1.030" y="-1.281" z="-1.398" 
+   compression=".1" 
+   spring=".8"
+   on-solid="1" >
+  <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+</gear>
+
+<!-- Fuel
+     ==========
+     The tanks are located in the wings.
+     Each has a capacity of 75 litres 
+-->
+<tank
+   x="1.0" y="1.4" z="-0.5" 
+   capacity="99.31" />
+
+<tank
+   x="1.0" y="-1.4" z="-0.5" 
+   capacity="99.31" />
+
+<!-- Mass distribution -->
+<ballast 
+   x="2.671" y="0" z="-.076" 
+   mass="350"/> <!-- panel & instrumentation -->
+
+</airplane>
