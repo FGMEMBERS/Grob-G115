@@ -6,10 +6,10 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>Ptr</object-name>
-  <object-name>PtrTip</object-name>
+  <object-name>gTip</object-name>
+  <object-name>gCtr</object-name>
   <property>accelerations/pilot-g</property>
-  <factor>20</factor>
+  <factor>22.5</factor>
   <center>
    <x-m>0</x-m>
    <y-m>0</y-m>
@@ -22,4 +22,60 @@
   </axis>
  </animation>
 
+ <animation>
+  <type>rotate</type>
+  <object-name>MinCtr</object-name>
+  <object-name>MinTip</object-name>
+  <property>accelerations/pilot-gmin</property>
+  <factor>22.5</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>MaxCtr</object-name>
+  <object-name>MaxTip</object-name>
+  <property>accelerations/pilot-gmax</property>
+  <factor>22.5</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>Reset</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-assign</command>
+    <property>accelerations/pilot-gmax</property>
+    <property>accelerations/pilot-g</property>
+   </binding>          
+   <binding>
+    <command>property-assign</command>
+    <property>accelerations/pilot-gmin</property>
+    <property>accelerations/pilot-g</property>
+   </binding>          
+  </action>
+ </animation>
+                               
 </PropertyList>

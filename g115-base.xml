@@ -55,6 +55,8 @@
     <g115>
       <file>Aircraft/Grob-G115/Nasal/doors.nas</file>
       <file>Aircraft/Grob-G115/Nasal/g115.nas</file>
+      <file>Aircraft/Generic/limits.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/instruments.nas</file>
     </g115>
   </nasal>
   

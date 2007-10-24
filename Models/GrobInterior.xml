@@ -913,7 +913,7 @@
 
  <model>
   <name>Switches</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/MiniPanel.xml</path>
+  <path>Aircraft/Grob-G115/Models/Instruments/KA51B/KA51B.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.125</y-m>
