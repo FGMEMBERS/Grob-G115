@@ -6,13 +6,13 @@ English/Français
 A little history
 ================
 
-Grob G115
-=========
+Grob G115 EG
+============
 
 Manufacturer                  : Grob
 Type                          : General Aviation/Training
 Year                          : 1999
-Powerplant                    : 1 x Lycoming IO-360 (180HP)
+Powerplant                    : 1 x Lycoming AEIO 360 (200HP)
 Wingspan                      : 10.0m
 Length                        : 7.59m
 Height                        : 2.8m
@@ -45,13 +45,13 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-Grob G115
-=========
+Grob G115 EG
+============
 
 Constructeur                  : Grob
 Type                          : Voyage/avion école
 Année                         : 1999
-Moteur                        : 1 x Lycoming IO-360 (180ch)
+Moteur                        : 1 x Lycoming AEIO-360 (200ch)
 Envergure                     : 10.0 m
 Longueur                      : 7.59 m
 Hauteur                       : 2.8 m
