@@ -33,21 +33,27 @@
     <object-name>antenne1</object-name>
     <object-name>pitot</object-name>
     <object-name>air</object-name>
-    <object-name>lampes</object-name>
+    <object-name>tourlampe</object-name>
+    <object-name>tourlampe2</object-name>
+    <object-name>ajout1</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
+    <object-name>verriere</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
-    <object-name>verriere</object-name>
+    <object-name>lampe</object-name>
+    <object-name>lampe2</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>vitre</object-name>
+    <object-name>verriere</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
-    <object-name>verriere</object-name>
+    <object-name>lampe</object-name>
+    <object-name>lampe2</object-name>
   </animation>
 
   <!-- L'hélice --> 
