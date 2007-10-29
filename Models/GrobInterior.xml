@@ -680,7 +680,7 @@
 
  <model>
   <name>AI1</name>
-  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <path>Aircraft/Grob-G115/Models/Instruments/AI/AI.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.245</y-m>
@@ -720,7 +720,7 @@
 
  <model>
   <name>AI2</name>
-  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <path>Aircraft/Grob-G115/Models/Instruments/AI/AI.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.305</y-m>
@@ -759,8 +759,8 @@
  </model>
  
  <model>
-  <name>TC</name>
-  <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+  <name>Slip/Turn</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/Turn/Turn.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.215</y-m>
@@ -940,5 +940,886 @@
    <z-m>0.020</z-m>
   </offsets>
  </model>
+
+ <model>
+  <name>Clock</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/Clock/Clock.xml</path>
+  <offsets>
+   <x-m>0.04</x-m>
+   <y-m>0.27</y-m>
+   <z-m>-0.03</z-m>
+  </offsets>
+ </model>
+
+<!-- Breakers -->
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BStartCtrl</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/start-ctrl</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BStartCtrl</object-name>
+  <object-name>BStartCtrlS</object-name>
+  <property>controls/circuit-breakers/start-ctrl</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BGenCtrl</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/gen-ctrl</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BGenCtrl</object-name>
+  <object-name>BGenCtrlS</object-name>
+  <property>controls/circuit-breakers/gen-ctrl</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BStrobeWhite</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/strobe-white</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BStrobeWhite</object-name>
+  <object-name>BStrobeWhiteS</object-name>
+  <property>controls/circuit-breakers/strobe-white</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+                       
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BStrobeRed</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/strobe-red</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BStrobeRed</object-name>
+  <object-name>BStrobeRedS</object-name>
+  <property>controls/circuit-breakers/strobe-red</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BPanelLights</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/panel-lights</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BPanelLights</object-name>
+  <object-name>BPanelLightsS</object-name>
+  <property>controls/circuit-breakers/panel-lights</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAvionicBlower</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/avionic-blower</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAvionicBlower</object-name>
+  <object-name>BAvionicBlowerS</object-name>
+  <property>controls/circuit-breakers/avionic-blower</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BPitotHeat</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/pitot-heat</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BPitotHeat</object-name>
+  <object-name>BPitotHeatS</object-name>
+  <property>controls/circuit-breakers/pitot-heat</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BFuelPump</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/fuel-pump</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BFuelPump</object-name>
+  <object-name>BFuelPumpS</object-name>
+  <property>controls/circuit-breakers/fuel-pump</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BEngInstr2</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/eng-instr-2</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BEngInstr2</object-name>
+  <object-name>BEngInstr2S</object-name>
+  <property>controls/circuit-breakers/eng-instr-2</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BGPS</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/gps</property>
+     <value type="bool">true</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BGPS</object-name>
+  <object-name>BGPSS</object-name>
+  <property>controls/circuit-breakers/gps</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BCom2Nav2</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/com2-nav2</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BCom2Nav2</object-name>
+  <object-name>BCom2Nav2S</object-name>
+  <property>controls/circuit-breakers/com2-nav2</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAvionicBus2</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/avionic-bus-2</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAvionicBus2</object-name>
+  <object-name>BAvionicBus2S</object-name>
+  <property>controls/circuit-breakers/avionic-bus-2</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BDME</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/dme</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BDME</object-name>
+  <object-name>BDMES</object-name>
+  <property>controls/circuit-breakers/dme</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAudioMarker</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/audio-marker</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAudioMarker</object-name>
+  <object-name>BAudioMarkerS</object-name>
+  <property>controls/circuit-breakers/audio-marker</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAttIndic2</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/att-indic-2</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAttIndic2</object-name>
+  <object-name>BAttIndic2S</object-name>
+  <property>controls/circuit-breakers/att-indic-2</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BLandLight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/land-light</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BLandLight</object-name>
+  <object-name>BLandLightS</object-name>
+  <property>controls/circuit-breakers/land-light</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BMapLight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/map-light</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BMapLight</object-name>
+  <object-name>BMapLightS</object-name>
+  <property>controls/circuit-breakers/map-light</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BNavLights</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/nav-lights</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BNavLights</object-name>
+  <object-name>BNavLightsS</object-name>
+  <property>controls/circuit-breakers/nav-lights</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BEngInstr1</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/eng-instr-1</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BEngInstr1</object-name>
+  <object-name>BEngInstr1S</object-name>
+  <property>controls/circuit-breakers/eng-instr-1</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BInstrLights</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/instr-lights</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BInstrLights</object-name>
+  <object-name>BInstrLightsS</object-name>
+  <property>controls/circuit-breakers/instr-lights</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BRPMInd</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/rpm-ind</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BRPMInd</object-name>
+  <object-name>BRPMIndS</object-name>
+  <property>controls/circuit-breakers/rpm-ind</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BLoVoltWarning</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/lo-volt-warning</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BLoVoltWarning</object-name>
+  <object-name>BLoVoltWarningS</object-name>
+  <property>controls/circuit-breakers/lo-volt-warning</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BTandS</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/tands</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BTandS</object-name>
+  <object-name>BTandSS</object-name>
+  <property>controls/circuit-breakers/tands</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BFuelLoLev</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/fuel-lo-lev</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BFuelLoLev</object-name>
+  <object-name>BFuelLoLevS</object-name>
+  <property>controls/circuit-breakers/fuel-lo-lev</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAttIndic1</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/att-indic-1</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAttIndic1</object-name>
+  <object-name>BAttIndic1S</object-name>
+  <property>controls/circuit-breakers/att-indic-1</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BStallWarning</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/stall-warning</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BStallWarning</object-name>
+  <object-name>BStallWarningS</object-name>
+  <property>controls/circuit-breakers/stall-warning</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BEssBus</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/ess-bus</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BEssBus</object-name>
+  <object-name>BEssBusS</object-name>
+  <property>controls/circuit-breakers/ess-bus</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BMainBus</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/main-bus</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BMainBus</object-name>
+  <object-name>BMainBusS</object-name>
+  <property>controls/circuit-breakers/main-bus</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BGen</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/gen</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BGen</object-name>
+  <object-name>BGenS</object-name>
+  <property>controls/circuit-breakers/gen</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAvionicRelay</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/avionic-relay</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAvionicRelay</object-name>
+  <object-name>BAvionicRelayS</object-name>
+  <property>controls/circuit-breakers/avionic-relay</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BFlaps</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/flaps</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BFlaps</object-name>
+  <object-name>BFlapsS</object-name>
+  <property>controls/circuit-breakers/flaps</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
 
 </PropertyList>

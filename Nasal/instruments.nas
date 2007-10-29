@@ -21,7 +21,7 @@ gmeterUpdate = func {
 	GMax = props.globals.getNode("/accelerations/pilot-gmax[0]").getValue();
 
 	if(GCurrent < 1 and GCurrent < GMin){setprop("/accelerations/pilot-gmin[0]", GCurrent);}
-	else {if(GCurrent > GMax){setprop("/accelerations/pilot-gmax[0]", GCurrent);}}
+	elsif(GCurrent > GMax){setprop("/accelerations/pilot-gmax[0]", GCurrent);}
 
 instrumenttimers();
 
@@ -31,11 +31,14 @@ instrumenttimers();
 
 radiodisplay = func(radio) {
 	selected=getprop("/instrumentation/"~radio~"/frequencies/selected-mhz");
-	digit1=int(selected/100);
-	digit2=int((selected/10)-(10*digit1));
-	digit3=int(selected-(100*digit1)-(10*digit2));
-	digit4=int(10*(selected-int(selected)));
-	digit5=int(10*(10*(selected-int(selected)))-(10*digit4));
+	formatted=sprintf("%.02f",selected);
+
+	digit1=substr(formatted,0,1);
+	digit2=substr(formatted,1,1);
+	digit3=substr(formatted,2,1);
+	digit4=substr(formatted,4,1);
+	digit5=substr(formatted,5,1);
+
 	setprop("instrumentation/"~radio~"/selected/digit1",digit1);
 	setprop("instrumentation/"~radio~"/selected/digit2",digit2);
 	setprop("instrumentation/"~radio~"/selected/digit3",digit3);
@@ -43,11 +46,13 @@ radiodisplay = func(radio) {
 	setprop("instrumentation/"~radio~"/selected/digit5",digit5);
 
 	standby=getprop("/instrumentation/"~radio~"/frequencies/standby-mhz");
-	digit1=int(standby/100);
-	digit2=int((standby/10)-(10*digit1));
-	digit3=int(standby-(100*digit1)-(10*digit2));
-	digit4=int(10*(standby-int(standby)));
-	digit5=int(10*(10*(standby-int(standby)))-(10*digit4));
+	formatted=sprintf("%.02f",standby);
+
+	digit1=substr(formatted,0,1);
+	digit2=substr(formatted,1,1);
+	digit3=substr(formatted,2,1);
+	digit4=substr(formatted,4,1);
+	digit5=substr(formatted,5,1);
 	
 	setprop("instrumentation/"~radio~"/standby/digit1",digit1);
 	setprop("instrumentation/"~radio~"/standby/digit2",digit2);
@@ -71,6 +76,39 @@ initialize = func {
 	props.globals.getNode("instrumentation/kn53/navvol-norm", 1).setDoubleValue(0.0);
 	props.globals.getNode("instrumentation/kx155a/commvol-norm", 1).setDoubleValue(0.0);
 	props.globals.getNode("instrumentation/kx155a/navvol-norm", 1).setDoubleValue(0.0);
+
+	### Initialise electrical stuff  (move to electric system init once electrical system exists complete) ###
+	props.globals.getNode("controls/circuit-breakers/start-ctrl", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/gen-ctrl", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/strobe-white", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/strobe-red", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/panel-lights", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/avionic-blower", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/pitot-heat", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/fuel-pump", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/eng-instr-2", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/gps", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/com2-nav2", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/avionic-bus-2", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/dme", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/audio-marker", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/att-indic-2", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/land-light", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/map-light", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/nav-lights", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/eng-instr-1", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/instr-lights", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/rpm-ind", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/lo-volt-warning", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/tands", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/fuel-lo-lev", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/att-indic-1", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/stall-warning", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/ess-bus", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/main-bus", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/gen", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/avionic-relay", 1).setBoolValue(1);
+	props.globals.getNode("controls/circuit-breakers/flaps", 1).setBoolValue(1);
 
 	instrumenttimers();
 	# Finished Initialising
