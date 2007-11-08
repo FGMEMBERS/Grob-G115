@@ -4,12 +4,140 @@
 
  <path>SwitchPanel.ac</path>
 
+ <animation>
+  <type>material</type>
+  <object-name>AvionicsOff</object-name>
+  <object-name>AvionicsOn</object-name>
+  <object-name>BAltEnc</object-name>
+  <object-name>BAltEncS</object-name>
+  <object-name>BAvionicBus1</object-name>
+  <object-name>BAvionicBus1S</object-name>
+  <object-name>BCom1</object-name>
+  <object-name>BCom1S</object-name>
+  <object-name>BHSI</object-name>
+  <object-name>BHSIS</object-name>
+  <object-name>BMute</object-name>
+  <object-name>BMuteS</object-name>
+  <object-name>BNav1</object-name>
+  <object-name>BNav1S</object-name>
+  <object-name>BXPDR</object-name>
+  <object-name>BXPDRS</object-name>
+  <object-name>BatteryOff</object-name>
+  <object-name>BatteryOn</object-name>
+  <object-name>Circle</object-name>
+  <object-name>Circle_0</object-name>
+  <object-name>Circle_1</object-name>
+  <object-name>Circle.001</object-name>
+  <object-name>Circle.002</object-name>
+  <object-name>Circle.003</object-name>
+  <object-name>Circle.004</object-name>
+  <object-name>Circle.005</object-name>
+  <object-name>Circle.006</object-name>
+  <object-name>Circle.007</object-name>
+  <object-name>Circle.008</object-name>
+  <object-name>Circle.009</object-name>
+  <object-name>Circle.010</object-name>
+  <object-name>Circle.011</object-name>
+  <object-name>Circle.012</object-name>
+  <object-name>Circle.013</object-name>
+  <object-name>Circle.014</object-name>
+  <object-name>Circle.015</object-name>
+  <object-name>Circle.016</object-name>
+  <object-name>Circle.029</object-name>
+  <object-name>Cube</object-name>
+  <object-name>Cylinder</object-name>
+  <object-name>Cylinder.001</object-name>
+  <object-name>Cylinder.002</object-name>
+  <object-name>Cylinder.003</object-name>
+  <object-name>Cylinder.004</object-name>
+  <object-name>Cylinder.005</object-name>
+  <object-name>Cylinder.063</object-name>
+  <object-name>DimmerInstrCap</object-name>
+  <object-name>DimmerInstrKnob</object-name>
+  <object-name>DimmerMapCap</object-name>
+  <object-name>DimmerMapKnob</object-name>
+  <object-name>DimmerPanelCap</object-name>
+  <object-name>DimmerPanelKnob</object-name>
+  <object-name>FuelPumpOff</object-name>
+  <object-name>FuelPumpOn</object-name>
+  <object-name>GeneratorOff</object-name>
+  <object-name>GeneratorOn</object-name>
+  <object-name>GeneratorReset</object-name>
+  <object-name>InstLightsDn</object-name>
+  <object-name>InstLightsOff</object-name>
+  <object-name>InstLightsOn</object-name>
+  <object-name>InstLightsUp</object-name>
+  <object-name>LdgLightOff</object-name>
+  <object-name>LdgLightOn</object-name>
+  <object-name>MagnetoDec</object-name>
+  <object-name>MagnetoInc</object-name>
+  <object-name>MapLightDn</object-name>
+  <object-name>MapLightUp</object-name>
+  <object-name>MuteOff</object-name>
+  <object-name>MuteOn</object-name>
+  <object-name>NavLightsOff</object-name>
+  <object-name>NavLightsOn</object-name>
+  <object-name>PanelLightsDn</object-name>
+  <object-name>PanelLightsUp</object-name>
+  <object-name>PitotHeatOff</object-name>
+  <object-name>PitotHeatOn</object-name>
+  <object-name>Screw1</object-name>
+  <object-name>Screw2</object-name>
+  <object-name>Screw3</object-name>
+  <object-name>Screw4</object-name>
+  <object-name>Screw5</object-name>
+  <object-name>Screw6</object-name>
+  <object-name>Screw7</object-name>
+  <object-name>Screw8</object-name>
+  <object-name>Sphere</object-name>
+  <object-name>Sphere.006</object-name>
+  <object-name>StrobeOff</object-name>
+  <object-name>StrobeRed</object-name>
+  <object-name>StrobeWhite</object-name>
+  <object-name>Switch-Avionics</object-name>
+  <object-name>Switch-Battery</object-name>
+  <object-name>Switch-Fuel</object-name>
+  <object-name>Switch-Generator</object-name>
+  <object-name>Switch-InstLight</object-name>
+  <object-name>Switch-LdgLight</object-name>
+  <object-name>Switch-Magneto</object-name>
+  <object-name>Switch-Mute</object-name>
+  <object-name>Switch-NavLight</object-name>
+  <object-name>Switch-PitotHeat</object-name>
+  <object-name>Switch-Strobe</object-name>
+  <object-name>Switch10</object-name>
+  <object-name>Switch10.001</object-name>
+  <object-name>Switch10.002</object-name>
+  <object-name>Switch10.003</object-name>
+  <object-name>Switch10.004</object-name>
+  <object-name>Switch10.005</object-name>
+  <object-name>Switch10.006</object-name>
+  <object-name>Switch10.007</object-name>
+  <object-name>Switch10.008</object-name>
+  <object-name>SwitchNut10</object-name>
+  <object-name>SwitchNut10.001</object-name>
+  <object-name>SwitchNut10.002</object-name>
+  <object-name>SwitchNut10.003</object-name>
+  <object-name>SwitchNut10.004</object-name>
+  <object-name>SwitchNut10.005</object-name>
+  <object-name>SwitchNut10.006</object-name>
+  <object-name>SwitchNut10.007</object-name>
+  <object-name>SwitchNut10.008</object-name>
+  <object-name>SwitchPanel</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>/controls/lighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
  <animation> 
   <type>rotate</type>
   <object-name>Switch-Mute</object-name>
   <object-name>MuteOn</object-name>
   <object-name>MuteOff</object-name>
-  <property>controls/switches/landing-light</property>
+  <property>controls/switches/mute</property>
   <factor>22.5</factor>
   <axis> 
    <x>0</x>
@@ -32,7 +160,7 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-assign</command>
-    <property>controls/switches/landing-light</property>
+    <property>controls/switches/mute</property>
     <value type="bool">true</value>
    </binding>          
   </action>
@@ -47,7 +175,7 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-assign</command>
-    <property>/controls/switches/landing-light</property>
+    <property>/controls/switches/mute</property>
     <value type="bool">false</value>
    </binding>          
   </action>
@@ -57,7 +185,7 @@
   <type>rotate</type>
   <object-name>DimmerPanelCap</object-name>
   <object-name>DimmerPanelKnob</object-name>
-  <property>/controls/lighting/panel-norm</property>
+  <property>/controls/lighting/panel-dim</property>
   <factor>270</factor>
   <axis> 
    <x>-1</x>
@@ -80,8 +208,10 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/controls/lighting/panel-norm</property>
+    <property>/controls/lighting/panel-dim</property>
     <step type="double">0.1</step>
+    <max>1</max>
+    <min>0</min>
    </binding>          
   </action>
  </animation>
@@ -95,8 +225,10 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/controls/lighting/panel-norm</property>
+    <property>/controls/lighting/panel-dim</property>
     <step type="double">-0.1</step>
+    <max>1</max>
+    <min>0</min>
    </binding>          
   </action>
  </animation>
@@ -106,7 +238,7 @@
   <type>rotate</type>
   <object-name>DimmerInstrCap</object-name>
   <object-name>DimmerInstrKnob</object-name>
-  <property>controls/lighting/instruments-norm</property>
+  <property>controls/lighting/instruments-dim</property>
   <factor>270</factor>
   <axis> 
    <x>-1</x>
@@ -129,8 +261,10 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/controls/lighting/instruments-norm</property>
+    <property>/controls/lighting/instruments-dim</property>
     <step type="double">0.1</step>
+    <max>1</max>
+    <min>0</min>
    </binding>          
   </action>
  </animation>
@@ -144,8 +278,10 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/controls/lighting/instruments-norm</property>
+    <property>/controls/lighting/instruments-dim</property>
     <step type="double">-0.1</step>
+    <max>1</max>
+    <min>0</min>
    </binding>          
   </action>
  </animation>
@@ -153,7 +289,7 @@
  <animation> 
   <type>rotate</type>
   <object-name>Switch-InstLight</object-name>
-  <property>controls/switches/inst-lights</property>
+  <property>controls/switches/instr-lights</property>
   <factor>30</factor>
   <axis> 
    <x>0</x>
@@ -176,7 +312,7 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-assign</command>
-    <property>/controls/switches/inst-lights</property>
+    <property>/controls/switches/instr-lights</property>
     <value type="bool">true</value>
    </binding>          
   </action>
@@ -191,7 +327,7 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-assign</command>
-    <property>/controls/switches/inst-lights</property>
+    <property>/controls/switches/instr-lights</property>
     <value type="bool">false</value>
    </binding>          
   </action>
@@ -311,7 +447,7 @@
   <type>rotate</type>
   <object-name>DimmerMapCap</object-name>
   <object-name>DimmerMapKnob</object-name>
-  <property>controls/lighting/map-norm</property>
+  <property>controls/lighting/map-dim</property>
   <factor>270</factor>
   <axis> 
    <x>-1</x>
@@ -334,7 +470,7 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/controls/lighting/map-norm</property>
+    <property>/controls/lighting/map-dim</property>
     <step type="double">0.1</step>
     <min>0</min>
     <max>1</max>
@@ -351,7 +487,7 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/controls/lighting/map-norm</property>
+    <property>/controls/lighting/map-dim</property>
     <step type="double">-0.1</step>
     <min>0</min>
     <max>1</max>
@@ -456,7 +592,7 @@
  <animation> 
   <type>rotate</type>
   <object-name>Switch-Avionics</object-name>
-  <property>/controls/switches/master-avionics</property>
+  <property>controls/switches/avionic-master</property>
   <factor>30</factor>
   <axis> 
    <x>0</x>
@@ -479,7 +615,7 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-assign</command>
-    <property>/controls/switches/master-avionics</property>
+    <property>/controls/switches/avionic-master</property>
     <value type="bool">true</value>
    </binding>          
   </action>
@@ -494,7 +630,7 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-assign</command>
-    <property>/controls/switches/master-avionics</property>
+    <property>/controls/switches/avionic-master</property>
     <value type="bool">false</value>
    </binding>          
   </action>
@@ -553,7 +689,7 @@
  <animation> 
   <type>translate</type>
   <object-name>Switch-Starter</object-name>
-  <property>controls/engines/engine/starter</property>
+  <property>controls/switches/starter</property>
   <factor>0.005</factor>
   <axis> 
    <x>-1</x>
@@ -570,14 +706,24 @@
    <button>0</button>
    <repeatable>false</repeatable>
    <binding>
-    <command>nasal</command>
-    <script>controls.startEngine()</script>
+    <command>property-assign</command>
+    <property>/controls/switches/starter</property>
+    <value type="int">1</value>
    </binding>
-   <mod-up>
-    <binding>
+  <binding>
      <command>nasal</command>
-     <script>props.setAll("/controls/engines/engine","starter", 0)</script>
-    </binding>
+     <script>controls.startEngine()</script>
+  </binding>
+   <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/starter</property>
+      <value type="int">0</value>
+     </binding>
+     <binding>
+       <command>nasal</command>
+       <script>props.setAll("/controls/engines/engine", "starter", 0)</script>
+     </binding>     
    </mod-up>                     
   </action>
  </animation>
@@ -744,6 +890,202 @@
     <value type="bool">false</value>
    </binding>          
   </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BMute</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/mute</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BMute</object-name>
+  <object-name>BMuteS</object-name>
+  <property>controls/circuit-breakers/mute</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BHSI</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/hsi</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BHSI</object-name>
+  <object-name>BHSIS</object-name>
+  <property>controls/circuit-breakers/hsi</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAltEnc</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/alt-encoder</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAltEnc</object-name>
+  <object-name>BAltEncS</object-name>
+  <property>controls/circuit-breakers/alt-encoder</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BXPDR</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/transponder</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BXPDR</object-name>
+  <object-name>BXPDRS</object-name>
+  <property>controls/circuit-breakers/transponder</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BNav1</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/nav1</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BNav1</object-name>
+  <object-name>BNav1S</object-name>
+  <property>controls/circuit-breakers/nav1</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BCom1</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/com1</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BCom1</object-name>
+  <object-name>BCom1S</object-name>
+  <property>controls/circuit-breakers/com1</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>BAvionicBus1</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/avionic-bus-1</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>BAvionicBus1</object-name>
+  <object-name>BAvionicBus1S</object-name>
+  <property>controls/circuit-breakers/avionic-bus-1</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
  </animation>
 
 </PropertyList>

@@ -4,22 +4,21 @@
 
  <path>Altimeter.ac</path>
 
-<!--
  <animation>
   <type>material</type>
   <object-name>Face</object-name>
-  <object-name>inhg</object-name>
-  <object-name>Needle10000</object-name>
-  <object-name>Needle1000</object-name>
-  <object-name>Needle100</object-name>
+  <object-name>Ptr10000t</object-name>
+  <object-name>Ptr1000t</object-name>
+  <object-name>Ptr100t</object-name>
   <emission>
    <red>1.0</red>
    <green>0.2</green>
    <blue>0.0</blue>
-   <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
   </emission>
  </animation>
 
+<!--
  <animation>
   <type>material</type>
   <object-name>disk</object-name>

@@ -33,7 +33,8 @@
     <object-name>antenne1</object-name>
     <object-name>pitot</object-name>
     <object-name>air</object-name>
-    <object-name>tourlampe</object-name>
+    <object-name>tourlampeG</object-name>
+    <object-name>tourlampeD</object-name>
     <object-name>tourlampe2</object-name>
     <object-name>ajout1</object-name>
 
@@ -42,7 +43,8 @@
     <object-name>verriere</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
-    <object-name>lampe</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
     <object-name>lampe2</object-name>
   </animation>
 
@@ -52,7 +54,8 @@
     <object-name>verriere</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
-    <object-name>lampe</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
     <object-name>lampe2</object-name>
   </animation>
 

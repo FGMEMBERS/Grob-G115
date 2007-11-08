@@ -1651,7 +1651,7 @@ OBJECT poly
 name "Bracket"
 data 9
 Plane.003
-texture "AH.rgb"
+texture "AI1.rgb"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -4187,7 +4187,7 @@ OBJECT poly
 name "RollReference_0"
 data 9
 Plane.001
-texture "AH.rgb"
+texture "AI1.rgb"
 texrep 1 1
 crease 30.000000
 numvert 8

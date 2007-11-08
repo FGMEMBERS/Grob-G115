@@ -8,6 +8,8 @@ instrumenttimers = func {
 	settimer(func {radiodisplay("comm[0]")}, UPDATE_PERIOD);
 	settimer(func {radiodisplay("nav[0]")}, UPDATE_PERIOD);
 	settimer(func {radiodisplay("nav[1]")}, UPDATE_PERIOD);
+
+
 }
 
 # =============================== end timer stuff ===========================================
@@ -20,10 +22,24 @@ gmeterUpdate = func {
 	GMin = props.globals.getNode("/accelerations/pilot-gmin[0]").getValue();
 	GMax = props.globals.getNode("/accelerations/pilot-gmax[0]").getValue();
 
-	if(GCurrent < 1 and GCurrent < GMin){setprop("/accelerations/pilot-gmin[0]", GCurrent);}
-	elsif(GCurrent > GMax){setprop("/accelerations/pilot-gmax[0]", GCurrent);}
+	if(GCurrent < GMin)
+	{ if (GCurrent > -6) 
+	  { setprop("/accelerations/pilot-gmin[0]", GCurrent);
+          }
+          else
+          { setprop("/accelerations/pilot-gmin[0]", -6);
+          }
+	}
+	elsif(GCurrent > GMax)
+	{ if(GCurrent < 10) 
+          { setprop("/accelerations/pilot-gmax[0]", GCurrent);
+          }
+          else
+          { setprop("/accelerations/pilot-gmax[0]", 10);
+          }
+	}
 
-instrumenttimers();
+	instrumenttimers();
 
 }
 

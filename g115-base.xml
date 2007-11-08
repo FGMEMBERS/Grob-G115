@@ -10,14 +10,12 @@
 
     <fuel-fraction>1.0</fuel-fraction>
 
-
     <flaps>
       <setting>0.00</setting>
       <setting>0.25</setting>
       <setting>0.75</setting>
       <setting>1.00</setting>
     </flaps>
-                    
 
     <startup>
       <splash-texture>Aircraft/Grob-G115/g115-splash.rgb</splash-texture>
@@ -46,6 +44,12 @@
       </config>
     </view>
 
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+                                                        
   </sim>
  
   <input>
@@ -58,6 +62,7 @@
       <file>Aircraft/Grob-G115/Nasal/g115.nas</file>
       <file>Aircraft/Generic/limits.nas</file>
       <file>Aircraft/Grob-G115/Nasal/instruments.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/g115-electrical.nas</file>
     </g115>
   </nasal>
   

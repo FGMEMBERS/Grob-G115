@@ -5,6 +5,20 @@
  <path>GMeter.ac</path>
 
  <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>MaxTip</object-name>   
+  <object-name>MinTip</object-name>
+  <object-name>gTip</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
   <type>rotate</type>
   <object-name>gTip</object-name>
   <object-name>gCtr</object-name>
