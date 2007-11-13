@@ -822,8 +822,8 @@
  </model>
 
  <model>
-  <name>VOR</name>
-  <path>Aircraft/Instruments-3d/vor/vor.xml</path>
+  <name>KI204</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/KI204/KI204.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.155</y-m>
@@ -852,8 +852,8 @@
  </model>
 
  <model>
-  <name>ADF</name>
-  <path>Aircraft/Instruments-3d/adf/adf.xml</path>
+  <name>KI525A</name>
+  <path>Aircraft/Grob-G115/Models/Instruments/KI525A/KI525A.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.305</y-m>
