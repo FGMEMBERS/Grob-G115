@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>KI525A.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Bearing</object-name>
+  <object-name>Face</object-name>
+  <object-name>HdgBug</object-name>
+  <object-name>HdgFlag</object-name>
+  <object-name>LubberLine</object-name>
+  <object-name>NavFlag</object-name>
+  <object-name>OBSPtr</object-name>
+  <object-name>Offset</object-name>
+  <object-name>OffsetScale</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+</PropertyList>
+
+
