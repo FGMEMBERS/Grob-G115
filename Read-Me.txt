@@ -29,7 +29,7 @@ d : canopy
 Thanks
 ======
 
-John Stockill for the FDM, the texture and panel
+Jon Stockill for the FDM, the texture and panel
 
 ===============
 BARANGER Emmanuel
@@ -69,7 +69,7 @@ d : cockpit
 Remerciements
 =============
 
-John Stockill pour le modèle de vol, la livrée et le tableau de bord.
+Jon Stockill pour le modèle de vol, la livrée et le tableau de bord.
 
 ===============
 BARANGER Emmanuel
