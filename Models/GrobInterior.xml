@@ -237,7 +237,35 @@
   </action>
  </animation>
 
- <animation> <type>translate</type> <visible>true</visible>
+ <animation> 
+  <type>translate</type>
+  <object-name>MixtureGate</object-name>
+  <property>controls/engines/engine[0]/mixturegate</property>
+  <factor>0.006</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>MixtureGate</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/engines/engine[0]/mixturegate</property>
+     <value type="bool">true</value>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation> 
+  <type>translate</type> 
   <object-name>TrimIndicator</object-name>
   <property>controls/flight/elevator-trim</property>
   <factor>0.03</factor>
@@ -296,22 +324,6 @@
   </axis>
  </animation>
                                                                 
-
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>TankNone</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-assign</command>
-     <property>/controls/fuel/switch-position</property>
-     <value type="int">0</value>
-   </binding>          
-  </action>
- </animation>
-
  <animation>
   <type>pick</type>
   <visible>false</visible>

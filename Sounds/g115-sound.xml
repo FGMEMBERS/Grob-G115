@@ -2267,6 +2267,30 @@
    </volume>
   </click>
 
+  <click> 
+   <name>Mixture Gate In</name>
+   <path>Sounds/click.wav</path>
+   <condition>
+    <property>controls/engines/engine[0]/mixturegate</property>
+   </condition>
+   <volume> 
+    <factor>1.0</factor>
+   </volume>
+  </click>
+  <click> 
+   <name>Mixture Gate Out</name>
+   <path>Sounds/click.wav</path>
+   <condition>
+    <not>
+     <property>controls/engines/engine[0]/mixturegate</property>
+    </not>
+   </condition>
+   <volume> 
+    <factor>1.0</factor>
+   </volume>
+  </click>
+
+
  </fx>
 
 </PropertyList>

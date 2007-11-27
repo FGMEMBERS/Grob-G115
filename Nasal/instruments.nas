@@ -1,10 +1,11 @@
 # set the timer for the selected function
 
-UPDATE_PERIOD = 0;
+var UPDATE_PERIOD = 0;
 
 instrumenttimers = func {
 
 	settimer(gmeterUpdate, UPDATE_PERIOD);
+	settimer(MixtureGate, UPDATE_PERIOD);
 	settimer(func {radiodisplay("comm[0]")}, UPDATE_PERIOD);
 	settimer(func {radiodisplay("nav[0]")}, UPDATE_PERIOD);
 	settimer(func {radiodisplay("nav[1]")}, UPDATE_PERIOD);
@@ -18,9 +19,9 @@ instrumenttimers = func {
 
 gmeterUpdate = func {
 
-	GCurrent = props.globals.getNode("/accelerations/pilot-g[0]").getValue();
-	GMin = props.globals.getNode("/accelerations/pilot-gmin[0]").getValue();
-	GMax = props.globals.getNode("/accelerations/pilot-gmax[0]").getValue();
+	var GCurrent = props.globals.getNode("/accelerations/pilot-g[0]").getValue();
+	var GMin = props.globals.getNode("/accelerations/pilot-gmin[0]").getValue();
+	var GMax = props.globals.getNode("/accelerations/pilot-gmax[0]").getValue();
 
 	if(GCurrent < GMin)
 	{ if (GCurrent > -6) 
@@ -43,16 +44,32 @@ gmeterUpdate = func {
 
 }
 
+# =============================== Mixture Gate  =============================================
+
+MixtureGate = func {
+
+	var GateState = props.globals.getNode("/controls/engines/engine[0]/mixturegate").getValue();
+	var MixVal = props.globals.getNode("/controls/engines/engine[0]/mixture").getValue();
+	var MixMin = 0.33;
+
+	if((MixVal < MixMin) and GateState)
+	{ 
+	  setprop("/controls/engines/engine[0]/mixture", MixMin);
+	}
+
+}
+
 # =============================== Warning Panel =============================================
 
 WarningPanelUpdate = func {
 
-	volts = props.globals.getNode("/systems/electrical/volts").getValue();
-	genvolts = props.globals.getNode("/systems/electrical/alternator").getValue();
-	fuel =  props.globals.getNode("/consumables/fuel/tank[0]/level-lbs").getValue()+ props.globals.getNode("/consumables/fuel/tank[1]/level-lbs").getValue();
-	starter = props.globals.getNode("/controls/engines/engine/starter").getValue();
-	dim = ( props.globals.getNode("/instrumentation/warning-panel/night").getValue() ? 0.5 : 1.0 );
-	test = props.globals.getNode("/instrumentation/warning-panel/test").getValue();
+	var volts = props.globals.getNode("/systems/electrical/volts").getValue();
+	var genvolts = props.globals.getNode("/systems/electrical/alternator").getValue();
+	var fuel =  props.globals.getNode("/consumables/fuel/tank[0]/level-lbs").getValue()+ props.globals.getNode("/consumables/fuel/tank[1]/level-lbs").getValue();
+	var starter = props.globals.getNode("/controls/engines/engine/starter").getValue();
+	var dim = ( props.globals.getNode("/instrumentation/warning-panel/night").getValue() ? 0.5 : 1.0 );
+	var test = props.globals.getNode("/instrumentation/warning-panel/test").getValue();
+	var lampnorm=0.0;
 
 	if ( (volts<25) or test )
 	{
@@ -99,14 +116,14 @@ WarningPanelUpdate = func {
 # ==================== Radio Frequency Display =========================
 
 radiodisplay = func(radio) {
-	selected=getprop("/instrumentation/"~radio~"/frequencies/selected-mhz");
-	formatted=sprintf("%.02f",selected);
+	var selected=getprop("/instrumentation/"~radio~"/frequencies/selected-mhz");
+	var formatted=sprintf("%.02f",selected);
 
-	digit1=substr(formatted,0,1);
-	digit2=substr(formatted,1,1);
-	digit3=substr(formatted,2,1);
-	digit4=substr(formatted,4,1);
-	digit5=substr(formatted,5,1);
+	var digit1=substr(formatted,0,1);
+	var digit2=substr(formatted,1,1);
+	var digit3=substr(formatted,2,1);
+	var digit4=substr(formatted,4,1);
+	var digit5=substr(formatted,5,1);
 
 	setprop("instrumentation/"~radio~"/selected/digit1",digit1);
 	setprop("instrumentation/"~radio~"/selected/digit2",digit2);
@@ -114,8 +131,8 @@ radiodisplay = func(radio) {
 	setprop("instrumentation/"~radio~"/selected/digit4",digit4);
 	setprop("instrumentation/"~radio~"/selected/digit5",digit5);
 
-	standby=getprop("/instrumentation/"~radio~"/frequencies/standby-mhz");
-	formatted=sprintf("%.02f",standby);
+	var standby=getprop("/instrumentation/"~radio~"/frequencies/standby-mhz");
+	var formatted=sprintf("%.02f",standby);
 
 	digit1=substr(formatted,0,1);
 	digit2=substr(formatted,1,1);
@@ -135,7 +152,10 @@ radiodisplay = func(radio) {
 
 initialize = func {
 
-	### Initialise gmeter stuff ###
+	### Initialise Mixture Gate ###
+	props.globals.getNode("/controls/engines/engine[0]/mixturegate", 1).setBoolValue(0);
+
+	### Initialise gmeter ###
 	props.globals.getNode("accelerations/pilot-g[0]", 1).setDoubleValue(1.01);
 	props.globals.getNode("accelerations/pilot-gmin[0]", 1).setDoubleValue(1);
 	props.globals.getNode("accelerations/pilot-gmax[0]", 1).setDoubleValue(1);
@@ -149,7 +169,7 @@ initialize = func {
 	props.globals.getNode("/instrumentation/warning-panel/fuel-norm", 1).setDoubleValue(0.0);
 	props.globals.getNode("/instrumentation/warning-panel/starter-norm", 1).setDoubleValue(0.0);
 
-	### Initialise Radio stuff ###
+	### Initialise Radios ###
 	props.globals.getNode("instrumentation/uhf/commvol-norm", 1).setDoubleValue(0.0);
 	props.globals.getNode("instrumentation/kn53/navvol-norm", 1).setDoubleValue(0.0);
 	props.globals.getNode("instrumentation/kx155a/commvol-norm", 1).setDoubleValue(0.0);
@@ -191,9 +211,9 @@ initialize = func {
 	instrumenttimers();
 	# Finished Initialising
 	print ("Instruments : initialised");
-	initialized = 1;
+	var initialized = 1;
 
 } #end func
 
 ######################### Fire it up ############################################
-setlistener("/sim/signals/fdm-initialized",initialize);
+setlistener("/sim/signals/electrical-initialized",initialize);
