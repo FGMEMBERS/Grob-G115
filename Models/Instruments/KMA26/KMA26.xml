@@ -32,34 +32,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>Com1LOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/com1sel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>Com1L</object-name>
-  <condition>
-    <property>/instrumentation/kma26/com1sel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>Com1L</object-name>
-  <condition>
-   <property>/instrumentation/kma26/com1sel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/com1lampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -80,34 +59,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>Com2LOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/com2sel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>Com2L</object-name>
-  <condition>
-    <property>/instrumentation/kma26/com2sel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>Com2L</object-name>
-  <condition>
-   <property>/instrumentation/kma26/com2sel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/com2lampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -127,34 +85,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>Com3LOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/com3sel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>Com3L</object-name>
-  <condition>
-    <property>/instrumentation/kma26/com3sel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>Com3L</object-name>
-  <condition>
-   <property>/instrumentation/kma26/com3sel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/com3lampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -174,34 +111,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>Nav1LOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/nav1sel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>Nav1L</object-name>
-  <condition>
-    <property>/instrumentation/kma26/nav1sel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>Nav1L</object-name>
-  <condition>
-   <property>/instrumentation/kma26/nav1sel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/nav1lampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -221,34 +137,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>Nav2LOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/nav2sel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>Nav2L</object-name>
-  <condition>
-    <property>/instrumentation/kma26/nav2sel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>Nav2L</object-name>
-  <condition>
-   <property>/instrumentation/kma26/nav2sel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/nav2lampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -268,34 +163,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>MkrLOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/mkrsel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>MkrL</object-name>
-  <condition>
-    <property>/instrumentation/kma26/mkrsel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>MkrL</object-name>
-  <condition>
-   <property>/instrumentation/kma26/mkrsel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/mkrlampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -315,34 +189,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>AdfLOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/adfsel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>AdfL</object-name>
-  <condition>
-    <property>/instrumentation/kma26/adfsel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>AdfL</object-name>
-  <condition>
-   <property>/instrumentation/kma26/adfsel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/adflampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -362,34 +215,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>DmeLOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/dmesel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>DmeL</object-name>
-  <condition>
-    <property>/instrumentation/kma26/dmesel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>DmeL</object-name>
-  <condition>
-   <property>/instrumentation/kma26/dmesel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/dmelampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -409,34 +241,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>AuxLOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/auxsel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>AuxL</object-name>
-  <condition>
-    <property>/instrumentation/kma26/auxsel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>AuxL</object-name>
-  <condition>
-   <property>/instrumentation/kma26/auxsel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/auxlampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -456,34 +267,13 @@
  </animation>
 
  <animation>
-  <type>select</type>
-  <object-name>MoniLOff</object-name>
-  <condition>
-   <not>
-    <property>/instrumentation/kma26/monisel</property>
-   </not>
-  </condition>
- </animation>
-
- <animation>
-  <type>select</type>
-  <object-name>MoniL</object-name>
-  <condition>
-    <property>/instrumentation/kma26/monisel</property>
-  </condition>
- </animation>
-
- <animation>
   <type>material</type>
   <object-name>MoniL</object-name>
-  <condition>
-   <property>/instrumentation/kma26/monisel</property>
-  </condition>
   <emission>
    <red>0.2</red>
    <green>1.0</green>
    <blue>0.2</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop> 
+   <factor-prop>/instrumentation/kma26/monilampnorm</factor-prop> 
   </emission>
  </animation>
 
@@ -666,6 +456,23 @@
   </action>
  </animation>
 
+ <animation> 
+  <type>rotate</type>
+  <object-name>OuterKnob2</object-name>
+  <property>/instrumentation/kma26/primaryradio</property>
+  <factor>25</factor>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0.0575</y-m>
+   <z-m>0.015</z-m>  
+  </center>
+ </animation>                                                              
+
  <animation>
   <type>pick</type>
   <visible>false</visible>
@@ -674,6 +481,10 @@
    <button>0</button>
    <repeatable>true</repeatable>
    <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kma26/primaryradio</property>
+    <step type="int">-1</step>
+    <min>0</min>
    </binding>          
   </action>
  </animation>
@@ -686,6 +497,10 @@
    <button>0</button>
    <repeatable>true</repeatable>
    <binding>
+    <command>property-adjust</command>
+    <property>/instrumentation/kma26/primaryradio</property>
+    <step type="int">1</step>
+    <max>4</max>
    </binding>          
   </action>
  </animation>
@@ -712,6 +527,39 @@
    <binding>
    </binding>          
   </action>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>OuterLamp</object-name>
+  <emission>
+   <red>0.9</red>
+   <green>0.9</green>
+   <blue>0.9</blue>
+   <factor-prop>/instrumentation/kma26/omkrlampnorm</factor-prop> 
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>MiddleLamp</object-name>
+  <emission>
+   <red>0.9</red>
+   <green>0.9</green>
+   <blue>0.9</blue>
+   <factor-prop>/instrumentation/kma26/mmkrlampnorm</factor-prop> 
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>InnerLamp</object-name>
+  <emission>
+   <red>0.9</red>
+   <green>0.9</green>
+   <blue>0.9</blue>
+   <factor-prop>/instrumentation/kma26/imkrlampnorm</factor-prop> 
+  </emission>
  </animation>
 
 </PropertyList>

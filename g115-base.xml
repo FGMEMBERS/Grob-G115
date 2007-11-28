@@ -64,6 +64,7 @@
       <file>Aircraft/Grob-G115/Nasal/g115-electrical.nas</file>
       <file>Aircraft/Grob-G115/Nasal/instruments.nas</file>
       <file>Aircraft/Grob-G115/Models/Instruments/WarningPanel/WarningPanel.nas</file>
+      <file>Aircraft/Grob-G115/Models/Instruments/KMA26/KMA26.nas</file>
     </g115>
   </nasal>
   
