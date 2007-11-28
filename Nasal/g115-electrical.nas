@@ -33,6 +33,9 @@ init_electrical = func {
     props.globals.getNode("/systems/electrical/volts", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/amps", 1).setDoubleValue(0.0);
 
+    props.globals.getNode("instrumentation/warning-panel/lovolt-norm", 1).setDoubleValue(0.0);
+    props.globals.getNode("instrumentation/warning-panel/fuel-norm", 1).setDoubleValue(0.0);
+
     props.globals.getNode("controls/circuit-breakers/start-ctrl", 1).setBoolValue(1);
     props.globals.getNode("controls/circuit-breakers/start-ctrl", 1).setBoolValue(1);
     props.globals.getNode("controls/circuit-breakers/gen-ctrl", 1).setBoolValue(1);
