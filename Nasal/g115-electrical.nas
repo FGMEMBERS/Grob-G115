@@ -32,6 +32,7 @@ init_electrical = func {
 ###
     props.globals.getNode("/systems/electrical/volts", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/amps", 1).setDoubleValue(0.0);
+    props.globals.getNode("/systems/electrical/alternator", 1).setDoubleValue(0.0);
 
     props.globals.getNode("instrumentation/warning-panel/lovolt-norm", 1).setDoubleValue(0.0);
     props.globals.getNode("instrumentation/warning-panel/fuel-norm", 1).setDoubleValue(0.0);
@@ -90,6 +91,9 @@ init_electrical = func {
     props.globals.getNode("/controls/lighting/map-dim", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/outputs/start-ctrl", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/outputs/instrument-lights", 1).setDoubleValue(0.0);
+    props.globals.getNode("/systems/electrical/outputs/lo-volt-warning", 1).setDoubleValue(0.0);
+
+    props.globals.getNode("/sim/signals/electrical-initialized", 1).setBoolValue(0);
 
     print("Done\n");
     # Request that the update fuction be called next frame
