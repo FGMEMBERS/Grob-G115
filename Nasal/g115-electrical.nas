@@ -92,6 +92,7 @@ init_electrical = func {
     props.globals.getNode("/systems/electrical/outputs/start-ctrl", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/outputs/instrument-lights", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/outputs/lo-volt-warning", 1).setDoubleValue(0.0);
+    props.globals.getNode("/systems/electrical/outputs/audio-marker", 1).setDoubleValue(0.0);
 
     props.globals.getNode("/sim/signals/electrical-initialized", 1).setBoolValue(0);
 
@@ -633,6 +634,8 @@ avionic_bus_2 = func() {
     # Audio Marker (3A)
     if ( getprop("/controls/circuit-breakers/audio-marker") ) {
         setprop("/systems/electrical/outputs/audio-marker", avionic_bus_2_volts);
+	# Keep Instrumentation/marker_beacon.cxx happy
+	setprop("/systems/electrical/outputs/nav", avionic_bus_2_volts);
 	load += 0.5;
     } else {
         setprop("/systems/electrical/outputs/audio-marker", 0.0);

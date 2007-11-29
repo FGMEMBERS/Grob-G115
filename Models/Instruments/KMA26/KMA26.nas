@@ -66,10 +66,10 @@ KMA26Update = func {
 	{
 		lampnorm = volts * dim * 0.041666;
 		setprop("/instrumentation/kma26/mkrlampnorm",lampnorm);
-#		setprop("/instrumentation/marker-beacon/audio-btn",1);
+		setprop("/instrumentation/marker-beacon/audio-btn",1);
 	} else {
 		setprop("/instrumentation/kma26/mkrlampnorm",0.0);
-#		setprop("/instrumentation/marker-beacon/audio-btn",0);
+		setprop("/instrumentation/marker-beacon/audio-btn",0);
 	}
 
 	if ( getprop("/instrumentation/kma26/dmesel") )
