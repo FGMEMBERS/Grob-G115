@@ -394,5 +394,36 @@
   </offsets>
  </model>
 
+  <!-- White Strobes -->
+
+ <model>
+  <path>Aircraft/Grob-G115/Models/strobe-white.xml</path>
+  <offsets>
+   <x-m>-1.60</x-m>
+   <y-m>-5.00</y-m>
+   <z-m>-0.25</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Grob-G115/Models/strobe-white.xml</path>
+  <offsets>
+   <x-m>-1.60</x-m>
+   <y-m>5.00</y-m>
+   <z-m>-0.25</z-m>
+  </offsets>
+ </model>
+
+  <!-- Red Strobe -->
+
+ <model>
+  <path>Aircraft/Grob-G115/Models/strobe-red.xml</path>
+  <offsets>
+   <x-m>-0.44</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.80</z-m>
+  </offsets>
+ </model>
+
 </PropertyList>
 

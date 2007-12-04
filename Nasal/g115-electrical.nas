@@ -5,24 +5,23 @@
 # Initialize internal values
 #
 
-battery = nil;
-alternator = nil;
+var battery = nil;
+var alternator = nil;
 
-last_time = 0.0;
+var last_time = 0.0;
 
-vbus_volts = 0.0;
-main_bus_volts = 0.0;
-essential_bus_volts = 0.0;
-avionic_bus_1_volts = 0.0;
-avionic_bus_2_volts = 0.0;
-ammeter_ave = 0.0;
+var vbus_volts = 0.0;
+var main_bus_volts = 0.0;
+var essential_bus_volts = 0.0;
+var avionic_bus_1_volts = 0.0;
+var avionic_bus_2_volts = 0.0;
+var ammeter_ave = 0.0;
 
 ##
 # Initialize the electrical system
 #
 
 init_electrical = func {
-    print("Initializing Nasal Electrical System...");
     battery = BatteryClass.new();
     alternator = AlternatorClass.new();
 
@@ -83,6 +82,7 @@ init_electrical = func {
     props.globals.getNode("/controls/switches/landing-light", 1).setBoolValue(0);
     props.globals.getNode("/controls/switches/nav-lights", 1).setBoolValue(0);
     props.globals.getNode("/controls/switches/pitot-heat", 1).setBoolValue(0);
+    props.globals.getNode("/controls/switches/strobes", 1).setIntValue(0);
     props.globals.getNode("/controls/anti-ice/engine/carb-heat", 1).setBoolValue(0);
     props.globals.getNode("/controls/switches/instr-lights", 1).setBoolValue(0);
 
@@ -94,9 +94,9 @@ init_electrical = func {
     props.globals.getNode("/systems/electrical/outputs/lo-volt-warning", 1).setDoubleValue(0.0);
     props.globals.getNode("/systems/electrical/outputs/audio-marker", 1).setDoubleValue(0.0);
 
+    print("Nasal Electrical System : initialised");
     props.globals.getNode("/sim/signals/electrical-initialized", 1).setBoolValue(0);
 
-    print("Done\n");
     # Request that the update fuction be called next frame
     settimer(update_electrical, 0);
 }
@@ -324,8 +324,9 @@ main_bus = func() {
     }
 
     # White Strobe (10A)
-    if ( getprop("/controls/circuit-breakers/white-strobe") and
-         getprop("/controls/switches/strobes")==1 ) {
+    var strobeswitch=getprop("/controls/switches/strobes");
+    if ( getprop("/controls/circuit-breakers/strobe-white") and
+         strobeswitch==1 ) {
          setprop("/systems/electrical/outputs/white-strobe", main_bus_volts);
          load += 6.0;
     } else {
@@ -333,8 +334,8 @@ main_bus = func() {
     }
     
     # Red Strobe (7.5A)
-    if ( getprop("/controls/circuit-breakers/red-strobe") and 
-         getprop("/controls/switches/strobes")==-1 ) {
+    if ( getprop("/controls/circuit-breakers/strobe-red") and 
+         strobeswitch==-1 ) {
         setprop("/systems/electrical/outputs/red-strobe", main_bus_volts);
 	load += 3;
     } else {
@@ -669,5 +670,4 @@ avionic_bus_2 = func() {
 
 # Setup a timer based call to initialized the electrical system as
 # soon as possible.
-print("Nasal Electrical System Loaded\n");
 setlistener("/sim/signals/fdm-initialized",init_electrical);
