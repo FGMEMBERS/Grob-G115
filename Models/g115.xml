@@ -425,5 +425,48 @@
   </offsets>
  </model>
 
-</PropertyList>
+  <!-- Stbd Nav Lights -->
 
+ <model>
+  <path>Aircraft/Grob-G115/Models/navlight-green.xml</path>
+  <offsets>
+   <x-m>-1.50</x-m>
+   <y-m>5.00</y-m>
+   <z-m>-0.25</z-m>
+   <heading-deg>225</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Grob-G115/Models/navlight-white.xml</path>
+  <offsets>
+   <x-m>-1.40</x-m>
+   <y-m>5.00</y-m>
+   <z-m>-0.25</z-m>
+   <heading-deg>140</heading-deg>
+  </offsets>
+ </model>
+
+  <!-- Port Nav Lights -->
+
+ <model>
+  <path>Aircraft/Grob-G115/Models/navlight-red.xml</path>
+  <offsets>
+   <x-m>-1.50</x-m>
+   <y-m>-5.00</y-m>
+   <z-m>-0.25</z-m>
+   <heading-deg>315</heading-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Grob-G115/Models/navlight-white.xml</path>
+  <offsets>
+   <x-m>-1.40</x-m>
+   <y-m>-5.00</y-m>
+   <z-m>-0.25</z-m>
+   <heading-deg>40</heading-deg>
+  </offsets>
+ </model>
+
+</PropertyList>
