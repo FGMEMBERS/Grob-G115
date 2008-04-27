@@ -191,8 +191,8 @@
    <repeatable>false</repeatable>
    <binding>
     <command>property-swap</command>
-    <property>/instrumentation/nav/frequencies/selected-mhz</property>
-    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/selected-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
    </binding>                             
   </action>
  </animation>                        
@@ -206,7 +206,7 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
     <step type="double">1</step>
    </binding>          
   </action>
@@ -221,7 +221,7 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
     <step type="double">-1</step>
    </binding>          
   </action>
@@ -236,7 +236,7 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
     <step type="double">0.05</step>
    </binding>          
   </action>
@@ -251,7 +251,7 @@
    <repeatable>true</repeatable>
    <binding>
     <command>property-adjust</command>
-    <property>/instrumentation/nav/frequencies/standby-mhz</property>
+    <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
     <step type="double">-0.05</step>
    </binding>          
   </action>
@@ -1756,11 +1756,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>4</value>
      </equals>
     </or>
@@ -1775,11 +1775,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>6</value>
      </equals>
     </or>
@@ -1792,7 +1792,7 @@
   <object-name>NavA1.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/selected/digit1</property>
+    <property>instrumentation/nav[1]/selected/digit1</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -1805,15 +1805,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>7</value>
      </equals>
     </or>
@@ -1827,19 +1827,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit1</property>
+    <property>instrumentation/nav[1]/selected/digit1</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit1</property>
+    <property>instrumentation/nav[1]/selected/digit1</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit1</property>
+     <property>instrumentation/nav[1]/selected/digit1</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit1</property>
+     <property>instrumentation/nav[1]/selected/digit1</property>
      <value>8</value>
     </equals>
    </or>
@@ -1853,19 +1853,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>7</value>
      </equals>
     </or>
@@ -1880,15 +1880,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit1</property>
+      <property>instrumentation/nav[1]/selected/digit1</property>
       <value>7</value>
      </equals>
     </or>
@@ -1905,11 +1905,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>4</value>
      </equals>
     </or>
@@ -1924,11 +1924,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>6</value>
      </equals>
     </or>
@@ -1941,7 +1941,7 @@
   <object-name>NavA2.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/selected/digit2</property>
+    <property>instrumentation/nav[1]/selected/digit2</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -1954,15 +1954,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>7</value>
      </equals>
     </or>
@@ -1976,19 +1976,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit2</property>
+    <property>instrumentation/nav[1]/selected/digit2</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit2</property>
+    <property>instrumentation/nav[1]/selected/digit2</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit2</property>
+     <property>instrumentation/nav[1]/selected/digit2</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit2</property>
+     <property>instrumentation/nav[1]/selected/digit2</property>
      <value>8</value>
     </equals>
    </or>
@@ -2002,19 +2002,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>7</value>
      </equals>
     </or>
@@ -2029,15 +2029,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit2</property>
+      <property>instrumentation/nav[1]/selected/digit2</property>
       <value>7</value>
      </equals>
     </or>
@@ -2054,11 +2054,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>4</value>
      </equals>
     </or>
@@ -2073,11 +2073,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>6</value>
      </equals>
     </or>
@@ -2090,7 +2090,7 @@
   <object-name>NavA3.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/selected/digit3</property>
+    <property>instrumentation/nav[1]/selected/digit3</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2103,15 +2103,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>7</value>
      </equals>
     </or>
@@ -2125,19 +2125,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit3</property>
+    <property>instrumentation/nav[1]/selected/digit3</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit3</property>
+    <property>instrumentation/nav[1]/selected/digit3</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit3</property>
+     <property>instrumentation/nav[1]/selected/digit3</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit3</property>
+     <property>instrumentation/nav[1]/selected/digit3</property>
      <value>8</value>
     </equals>
    </or>
@@ -2151,19 +2151,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>7</value>
      </equals>
     </or>
@@ -2178,15 +2178,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit3</property>
+      <property>instrumentation/nav[1]/selected/digit3</property>
       <value>7</value>
      </equals>
     </or>
@@ -2203,11 +2203,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>4</value>
      </equals>
     </or>
@@ -2222,11 +2222,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>6</value>
      </equals>
     </or>
@@ -2239,7 +2239,7 @@
   <object-name>NavA4.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/selected/digit4</property>
+    <property>instrumentation/nav[1]/selected/digit4</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2252,15 +2252,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>7</value>
      </equals>
     </or>
@@ -2274,19 +2274,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit4</property>
+    <property>instrumentation/nav[1]/selected/digit4</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit4</property>
+    <property>instrumentation/nav[1]/selected/digit4</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit4</property>
+     <property>instrumentation/nav[1]/selected/digit4</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit4</property>
+     <property>instrumentation/nav[1]/selected/digit4</property>
      <value>8</value>
     </equals>
    </or>
@@ -2300,19 +2300,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>7</value>
      </equals>
     </or>
@@ -2327,15 +2327,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit4</property>
+      <property>instrumentation/nav[1]/selected/digit4</property>
       <value>7</value>
      </equals>
     </or>
@@ -2352,11 +2352,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>4</value>
      </equals>
     </or>
@@ -2371,11 +2371,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>6</value>
      </equals>
     </or>
@@ -2388,7 +2388,7 @@
   <object-name>NavA5.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/selected/digit5</property>
+    <property>instrumentation/nav[1]/selected/digit5</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2401,15 +2401,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>7</value>
      </equals>
     </or>
@@ -2423,19 +2423,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit5</property>
+    <property>instrumentation/nav[1]/selected/digit5</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/selected/digit5</property>
+    <property>instrumentation/nav[1]/selected/digit5</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit5</property>
+     <property>instrumentation/nav[1]/selected/digit5</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/selected/digit5</property>
+     <property>instrumentation/nav[1]/selected/digit5</property>
      <value>8</value>
     </equals>
    </or>
@@ -2449,19 +2449,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>7</value>
      </equals>
     </or>
@@ -2476,15 +2476,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/selected/digit5</property>
+      <property>instrumentation/nav[1]/selected/digit5</property>
       <value>7</value>
      </equals>
     </or>
@@ -2501,11 +2501,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>4</value>
      </equals>
     </or>
@@ -2520,11 +2520,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>6</value>
      </equals>
     </or>
@@ -2537,7 +2537,7 @@
   <object-name>NavS1.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/standby/digit1</property>
+    <property>instrumentation/nav[1]/standby/digit1</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2550,15 +2550,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>7</value>
      </equals>
     </or>
@@ -2572,19 +2572,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit1</property>
+    <property>instrumentation/nav[1]/standby/digit1</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit1</property>
+    <property>instrumentation/nav[1]/standby/digit1</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit1</property>
+     <property>instrumentation/nav[1]/standby/digit1</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit1</property>
+     <property>instrumentation/nav[1]/standby/digit1</property>
      <value>8</value>
     </equals>
    </or>
@@ -2598,19 +2598,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>7</value>
      </equals>
     </or>
@@ -2625,15 +2625,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit1</property>
+      <property>instrumentation/nav[1]/standby/digit1</property>
       <value>7</value>
      </equals>
     </or>
@@ -2650,11 +2650,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>4</value>
      </equals>
     </or>
@@ -2669,11 +2669,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>6</value>
      </equals>
     </or>
@@ -2686,7 +2686,7 @@
   <object-name>NavS2.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/standby/digit2</property>
+    <property>instrumentation/nav[1]/standby/digit2</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2699,15 +2699,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>7</value>
      </equals>
     </or>
@@ -2721,19 +2721,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit2</property>
+    <property>instrumentation/nav[1]/standby/digit2</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit2</property>
+    <property>instrumentation/nav[1]/standby/digit2</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit2</property>
+     <property>instrumentation/nav[1]/standby/digit2</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit2</property>
+     <property>instrumentation/nav[1]/standby/digit2</property>
      <value>8</value>
     </equals>
    </or>
@@ -2747,19 +2747,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>7</value>
      </equals>
     </or>
@@ -2774,15 +2774,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit2</property>
+      <property>instrumentation/nav[1]/standby/digit2</property>
       <value>7</value>
      </equals>
     </or>
@@ -2799,11 +2799,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>4</value>
      </equals>
     </or>
@@ -2818,11 +2818,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>6</value>
      </equals>
     </or>
@@ -2835,7 +2835,7 @@
   <object-name>NavS3.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/standby/digit3</property>
+    <property>instrumentation/nav[1]/standby/digit3</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2848,15 +2848,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>7</value>
      </equals>
     </or>
@@ -2870,19 +2870,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit3</property>
+    <property>instrumentation/nav[1]/standby/digit3</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit3</property>
+    <property>instrumentation/nav[1]/standby/digit3</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit3</property>
+     <property>instrumentation/nav[1]/standby/digit3</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit3</property>
+     <property>instrumentation/nav[1]/standby/digit3</property>
      <value>8</value>
     </equals>
    </or>
@@ -2896,19 +2896,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>7</value>
      </equals>
     </or>
@@ -2923,15 +2923,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit3</property>
+      <property>instrumentation/nav[1]/standby/digit3</property>
       <value>7</value>
      </equals>
     </or>
@@ -2948,11 +2948,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>4</value>
      </equals>
     </or>
@@ -2967,11 +2967,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>6</value>
      </equals>
     </or>
@@ -2984,7 +2984,7 @@
   <object-name>NavS4.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/standby/digit4</property>
+    <property>instrumentation/nav[1]/standby/digit4</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -2997,15 +2997,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>7</value>
      </equals>
     </or>
@@ -3019,19 +3019,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit4</property>
+    <property>instrumentation/nav[1]/standby/digit4</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit4</property>
+    <property>instrumentation/nav[1]/standby/digit4</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit4</property>
+     <property>instrumentation/nav[1]/standby/digit4</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit4</property>
+     <property>instrumentation/nav[1]/standby/digit4</property>
      <value>8</value>
     </equals>
    </or>
@@ -3045,19 +3045,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>7</value>
      </equals>
     </or>
@@ -3072,15 +3072,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit4</property>
+      <property>instrumentation/nav[1]/standby/digit4</property>
       <value>7</value>
      </equals>
     </or>
@@ -3097,11 +3097,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>4</value>
      </equals>
     </or>
@@ -3116,11 +3116,11 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>5</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>6</value>
      </equals>
     </or>
@@ -3133,7 +3133,7 @@
   <object-name>NavS5.3</object-name>
   <condition>
    <not-equals>
-    <property>instrumentation/nav[0]/standby/digit5</property>
+    <property>instrumentation/nav[1]/standby/digit5</property>
     <value>2</value>
    </not-equals>
   </condition>
@@ -3146,15 +3146,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>4</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>7</value>
      </equals>
     </or>
@@ -3168,19 +3168,19 @@
   <condition>
    <or>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit5</property>
+    <property>instrumentation/nav[1]/standby/digit5</property>
     <value>0</value>
     </equals>
     <equals>
-    <property>instrumentation/nav[0]/standby/digit5</property>
+    <property>instrumentation/nav[1]/standby/digit5</property>
     <value>2</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit5</property>
+     <property>instrumentation/nav[1]/standby/digit5</property>
      <value>6</value>
     </equals>
     <equals>
-     <property>instrumentation/nav[0]/standby/digit5</property>
+     <property>instrumentation/nav[1]/standby/digit5</property>
      <value>8</value>
     </equals>
    </or>
@@ -3194,19 +3194,19 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>2</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>3</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>7</value>
      </equals>
     </or>
@@ -3221,15 +3221,15 @@
    <not>
     <or>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>0</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>1</value>
      </equals>
      <equals>
-      <property>instrumentation/nav[0]/standby/digit5</property>
+      <property>instrumentation/nav[1]/standby/digit5</property>
       <value>7</value>
      </equals>
     </or>
