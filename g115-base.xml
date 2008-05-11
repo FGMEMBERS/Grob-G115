@@ -44,6 +44,21 @@
       </config>
     </view>
 
+    <view n="100">
+      <name>Right hand seat</name>
+      <internal archive="y">true</internal>
+      <type>lookfrom</type>
+      <config>
+         <from-model type="bool">true</from-model>
+         <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+         <x-offset-m archive="y">  0.28 </x-offset-m>   <!-- Right -->
+         <y-offset-m archive="y">  0.25 </y-offset-m>   <!-- Up    -->
+         <z-offset-m archive="y"> -1.172 </z-offset-m>  <!-- Back  -->
+         <pitch-offset-deg>-14</pitch-offset-deg>
+         <default-field-of-view-deg>65.0</default-field-of-view-deg>
+      </config>
+    </view>
+
     <systems>
       <electrical>
         <path></path>
