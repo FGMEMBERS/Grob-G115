@@ -18,7 +18,7 @@ OBJECT poly
 name "AlternAir"
 data 10
 Circle.003
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 162
@@ -1470,7 +1470,7 @@ OBJECT poly
 name "BAttIndic1"
 data 12
 Cylinder.091
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -1873,7 +1873,7 @@ OBJECT poly
 name "BAttIndic2"
 data 12
 Cylinder.087
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -2276,7 +2276,7 @@ OBJECT poly
 name "BAudioMarker"
 data 12
 Cylinder.085
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -2679,7 +2679,7 @@ OBJECT poly
 name "BAvionicBlower"
 data 12
 Cylinder.105
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -3082,7 +3082,7 @@ OBJECT poly
 name "BAvionicBus2"
 data 12
 Cylinder.107
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -3485,7 +3485,7 @@ OBJECT poly
 name "BAvionicRelay"
 data 12
 Cylinder.103
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -3888,7 +3888,7 @@ OBJECT poly
 name "BCom2Nav2"
 data 12
 Cylinder.106
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -4291,7 +4291,7 @@ OBJECT poly
 name "BDME"
 data 12
 Cylinder.086
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -4694,7 +4694,7 @@ OBJECT poly
 name "BEngInstr1"
 data 12
 Cylinder.088
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -5097,7 +5097,7 @@ OBJECT poly
 name "BEngInstr2"
 data 12
 Cylinder.083
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -5500,7 +5500,7 @@ OBJECT poly
 name "BEssBus"
 data 12
 Cylinder.108
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -5903,7 +5903,7 @@ OBJECT poly
 name "BFlaps"
 data 12
 Cylinder.097
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -6306,7 +6306,7 @@ OBJECT poly
 name "BFuelLoLev"
 data 12
 Cylinder.109
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -6709,7 +6709,7 @@ OBJECT poly
 name "BFuelPump"
 data 12
 Cylinder.099
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -7112,7 +7112,7 @@ OBJECT poly
 name "BGPS"
 data 12
 Cylinder.084
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -7515,7 +7515,7 @@ OBJECT poly
 name "BGen"
 data 12
 Cylinder.111
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -7766,7 +7766,7 @@ OBJECT poly
 name "BGenCtrl"
 data 12
 Cylinder.071
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -8321,7 +8321,7 @@ OBJECT poly
 name "BInstrLights"
 data 12
 Cylinder.101
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -8724,7 +8724,7 @@ OBJECT poly
 name "BLandLight"
 data 12
 Cylinder.095
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -9127,7 +9127,7 @@ OBJECT poly
 name "BLoVoltWarning"
 data 12
 Cylinder.090
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -9530,7 +9530,7 @@ OBJECT poly
 name "BMainBus"
 data 12
 Cylinder.110
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -9933,7 +9933,7 @@ OBJECT poly
 name "BMapLight"
 data 12
 Cylinder.100
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -10336,7 +10336,7 @@ OBJECT poly
 name "BNavLights"
 data 12
 Cylinder.096
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -10739,7 +10739,7 @@ OBJECT poly
 name "BPanelLights"
 data 12
 Cylinder.098
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -11142,7 +11142,7 @@ OBJECT poly
 name "BPitotHeat"
 data 12
 Cylinder.094
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -11545,7 +11545,7 @@ OBJECT poly
 name "BRPMInd"
 data 12
 Cylinder.089
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -11948,7 +11948,7 @@ OBJECT poly
 name "BStallWarning"
 data 12
 Cylinder.092
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -12351,7 +12351,7 @@ OBJECT poly
 name "BStartCtrl"
 data 12
 Cylinder.078
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -12754,7 +12754,7 @@ OBJECT poly
 name "BStrobeRed"
 data 12
 Cylinder.093
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -13157,7 +13157,7 @@ OBJECT poly
 name "BStrobeWhite"
 data 12
 Cylinder.066
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -13560,7 +13560,7 @@ OBJECT poly
 name "BTandS"
 data 12
 Cylinder.102
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -13963,7 +13963,7 @@ OBJECT poly
 name "Blank"
 data 5
 Plane
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -14023,7 +14023,7 @@ OBJECT poly
 name "Blank.001"
 data 10
 Sphere.022
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -15042,7 +15042,7 @@ OBJECT poly
 name "Blank.002"
 data 10
 Sphere.021
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -16080,7 +16080,7 @@ OBJECT poly
 name "BlowerLever"
 data 9
 Plane.023
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -16241,7 +16241,7 @@ OBJECT poly
 name "BrakeLever"
 data 9
 Plane.015
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -31482,7 +31482,7 @@ OBJECT poly
 name "Console"
 data 8
 Cube.002
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -33010,7 +33010,7 @@ OBJECT poly
 name "Console.001"
 data 9
 Plane.011
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -33150,7 +33150,7 @@ OBJECT poly
 name "Cube.001"
 data 8
 Mesh.001
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -33282,7 +33282,7 @@ OBJECT poly
 name "Cube.004_1"
 data 8
 Cube.008
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -33375,7 +33375,7 @@ OBJECT poly
 name "Cube.009_1"
 data 8
 Cube.013
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -57464,7 +57464,7 @@ OBJECT poly
 name "FlapPanel_1"
 data 9
 Plane.008
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -57683,7 +57683,7 @@ OBJECT poly
 name "FlapSwitch"
 data 8
 Cube.009
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -58936,7 +58936,7 @@ OBJECT poly
 name "GPSSocket"
 data 9
 Plane.013
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 350
@@ -68861,7 +68861,7 @@ OBJECT poly
 name "MixtureGateHousing"
 data 8
 Cube.003
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -68933,7 +68933,7 @@ OBJECT poly
 name "PanelC"
 data 10
 Circle.040
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 51
@@ -69299,7 +69299,7 @@ OBJECT poly
 name "PanelControls"
 data 9
 Plane.005
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 132
@@ -70026,7 +70026,7 @@ OBJECT poly
 name "PanelL"
 data 10
 Circle.034
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 559
@@ -73984,7 +73984,7 @@ OBJECT poly
 name "PanelR"
 data 10
 Circle.028
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 280
@@ -75775,7 +75775,7 @@ OBJECT poly
 name "Plane"
 data 9
 Plane.010
-texture "Mat.rgb"
+texture "Mat.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -75850,7 +75850,7 @@ OBJECT poly
 name "Plane.001"
 data 9
 Plane.004
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 176
@@ -76932,7 +76932,7 @@ OBJECT poly
 name "Plane.003"
 data 9
 Plane.003
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -86662,7 +86662,7 @@ OBJECT poly
 name "TempLever"
 data 9
 Plane.025
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -86845,7 +86845,7 @@ OBJECT poly
 name "ThrotCovPlate_1"
 data 8
 Mesh.004
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 172
@@ -91610,7 +91610,7 @@ OBJECT poly
 name "TrimIndicator"
 data 4
 Mesh
-texture "PanelLabels.rgb"
+texture "PanelLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 8

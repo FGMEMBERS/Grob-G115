@@ -1,4 +1,4 @@
-English/FranÃ§ais
+English/Français
 
 [English]
 ----------
@@ -39,7 +39,7 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÃ§ais]
+[Français]
 ----------
 
 Un peu d'histoire
@@ -50,14 +50,14 @@ Grob G115 EG
 
 Constructeur                  : Grob
 Type                          : Voyage/avion Ã©cole
-AnnÃ©e                         : 1999
+Année                         : 1999
 Moteur                        : 1 x Lycoming AEIO-360 (200ch)
 Envergure                     : 10.0 m
 Longueur                      : 7.59 m
 Hauteur                       : 2.8 m
-Poids max au dÃ©collage        : 990 kg
-Vitesse estimÃ©e de croisiÃ¨re  : 235 km/h
-Autonomie estimÃ©e             : 1000 km
+Poids max au décollage        : 990 kg
+Vitesse estimée de croisière  : 235 km/h
+Autonomie estimée             : 1000 km
 Equipage                      : 2
 
 
@@ -69,7 +69,7 @@ d : cockpit
 Remerciements
 =============
 
-Jon Stockill pour le modÃ¨le de vol, la livrÃ©e et le tableau de bord.
+Jon Stockill pour le modèle de vol, la livrée et le tableau de bord.
 
 ===============
 BARANGER Emmanuel

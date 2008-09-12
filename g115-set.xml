@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="g115-jsbsim-cnf.xml"> -->
+<PropertyList include="g115-yasim-cnf.xml">
+
+  <sim>
+    <description>Grob G115</description>
+    <author>Emmanuel BARANGER (3D,FDM), Jon STOCKILL (Panel, FDM)</author>
+  </sim>
+
+</PropertyList>
+

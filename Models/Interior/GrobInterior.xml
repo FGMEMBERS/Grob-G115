@@ -2,140 +2,140 @@
 
 <PropertyList>
 
- <path>GrobInterior.ac</path>
+  <path>GrobInterior.ac</path>
 
- <animation>
-  <type>material</type>
-  <object-name>PanelL</object-name>
-  <object-name>PanelC</object-name>
-  <object-name>PanelR</object-name>
-  <object-name>GlareShieldInner</object-name>
-  <object-name>PanelControls</object-name>
-  <object-name>GPSSocket</object-name>
-  <object-name>BAttIndic1</object-name>
-  <object-name>BAttIndic1S</object-name>
-  <object-name>BAttIndic2</object-name>
-  <object-name>BAttIndic2S</object-name>
-  <object-name>BAudioMarker</object-name>
-  <object-name>BAudioMarkerS</object-name>
-  <object-name>BAvionicBlower</object-name>
-  <object-name>BAvionicBlowerS</object-name>
-  <object-name>BAvionicBus2</object-name>
-  <object-name>BAvionicBus2S</object-name>
-  <object-name>BAvionicRelay</object-name>
-  <object-name>BAvionicRelayS</object-name>
-  <object-name>BCom2Nav2</object-name>
-  <object-name>BCom2Nav2S</object-name>
-  <object-name>BDME</object-name>
-  <object-name>BDMES</object-name>
-  <object-name>BEngInstr1</object-name>
-  <object-name>BEngInstr1S</object-name>
-  <object-name>BEngInstr2</object-name>
-  <object-name>BEngInstr2S</object-name>
-  <object-name>BEssBus</object-name>
-  <object-name>BEssBusS</object-name>
-  <object-name>BFlaps</object-name>
-  <object-name>BFlapsS</object-name>
-  <object-name>BFuelLoLev</object-name>
-  <object-name>BFuelLoLevS</object-name>
-  <object-name>BFuelPump</object-name>
-  <object-name>BFuelPumpS</object-name>
-  <object-name>BGPS</object-name>
-  <object-name>BGPSS</object-name>
-  <object-name>BGen</object-name>
-  <object-name>BGenCtrl</object-name>
-  <object-name>BGenCtrlS</object-name>
-  <object-name>BGenS</object-name>
-  <object-name>BInstrLights</object-name>
-  <object-name>BInstrLightsS</object-name>
-  <object-name>BLandLight</object-name>
-  <object-name>BLandLightS</object-name>
-  <object-name>BLoVoltWarning</object-name>
-  <object-name>BLoVoltWarningS</object-name>
-  <object-name>BMainBus</object-name>
-  <object-name>BMainBusS</object-name>
-  <object-name>BMapLight</object-name>
-  <object-name>BMapLightS</object-name>
-  <object-name>BNavLights</object-name>
-  <object-name>BNavLightsS</object-name>
-  <object-name>BPanelLights</object-name>
-  <object-name>BPanelLightsS</object-name>
-  <object-name>BPitotHeat</object-name>
-  <object-name>BPitotHeatS</object-name>
-  <object-name>BRPMInd</object-name>
-  <object-name>BRPMIndS</object-name>
-  <object-name>BStallWarning</object-name>
-  <object-name>BStallWarningS</object-name>
-  <object-name>BStartCtrl</object-name>
-  <object-name>BStartCtrlS</object-name>
-  <object-name>BStrobeRed</object-name>
-  <object-name>BStrobeRedS</object-name>
-  <object-name>BStrobeWhite</object-name>
-  <object-name>BStrobeWhiteS</object-name>
-  <object-name>BTandS</object-name>
-  <object-name>BTandSS</object-name>
-  <object-name>Blank</object-name>
-  <object-name>Blank.001</object-name>
-  <object-name>BlowerLever</object-name>
-  <object-name>TempLever</object-name>
-  <object-name>BrakeLever</object-name>
-  <emission>
-   <red>0.5</red>
-   <green>0.1</green>
-   <blue>0.0</blue>
-   <factor-prop>/controls/lighting/panel-norm</factor-prop>
-  </emission>
- </animation>
+  <animation>
+    <type>material</type>
+    <object-name>PanelL</object-name>
+    <object-name>PanelC</object-name>
+    <object-name>PanelR</object-name>
+    <object-name>GlareShieldInner</object-name>
+    <object-name>PanelControls</object-name>
+    <object-name>GPSSocket</object-name>
+    <object-name>BAttIndic1</object-name>
+    <object-name>BAttIndic1S</object-name>
+    <object-name>BAttIndic2</object-name>
+    <object-name>BAttIndic2S</object-name>
+    <object-name>BAudioMarker</object-name>
+    <object-name>BAudioMarkerS</object-name>
+    <object-name>BAvionicBlower</object-name>
+    <object-name>BAvionicBlowerS</object-name>
+    <object-name>BAvionicBus2</object-name>
+    <object-name>BAvionicBus2S</object-name>
+    <object-name>BAvionicRelay</object-name>
+    <object-name>BAvionicRelayS</object-name>
+    <object-name>BCom2Nav2</object-name>
+    <object-name>BCom2Nav2S</object-name>
+    <object-name>BDME</object-name>
+    <object-name>BDMES</object-name>
+    <object-name>BEngInstr1</object-name>
+    <object-name>BEngInstr1S</object-name>
+    <object-name>BEngInstr2</object-name>
+    <object-name>BEngInstr2S</object-name>
+    <object-name>BEssBus</object-name>
+    <object-name>BEssBusS</object-name>
+    <object-name>BFlaps</object-name>
+    <object-name>BFlapsS</object-name>
+    <object-name>BFuelLoLev</object-name>
+    <object-name>BFuelLoLevS</object-name>
+    <object-name>BFuelPump</object-name>
+    <object-name>BFuelPumpS</object-name>
+    <object-name>BGPS</object-name>
+    <object-name>BGPSS</object-name>
+    <object-name>BGen</object-name>
+    <object-name>BGenCtrl</object-name>
+    <object-name>BGenCtrlS</object-name>
+    <object-name>BGenS</object-name>
+    <object-name>BInstrLights</object-name>
+    <object-name>BInstrLightsS</object-name>
+    <object-name>BLandLight</object-name>
+    <object-name>BLandLightS</object-name>
+    <object-name>BLoVoltWarning</object-name>
+    <object-name>BLoVoltWarningS</object-name>
+    <object-name>BMainBus</object-name>
+    <object-name>BMainBusS</object-name>
+    <object-name>BMapLight</object-name>
+    <object-name>BMapLightS</object-name>
+    <object-name>BNavLights</object-name>
+    <object-name>BNavLightsS</object-name>
+    <object-name>BPanelLights</object-name>
+    <object-name>BPanelLightsS</object-name>
+    <object-name>BPitotHeat</object-name>
+    <object-name>BPitotHeatS</object-name>
+    <object-name>BRPMInd</object-name>
+    <object-name>BRPMIndS</object-name>
+    <object-name>BStallWarning</object-name>
+    <object-name>BStallWarningS</object-name>
+    <object-name>BStartCtrl</object-name>
+    <object-name>BStartCtrlS</object-name>
+    <object-name>BStrobeRed</object-name>
+    <object-name>BStrobeRedS</object-name>
+    <object-name>BStrobeWhite</object-name>
+    <object-name>BStrobeWhiteS</object-name>
+    <object-name>BTandS</object-name>
+    <object-name>BTandSS</object-name>
+    <object-name>Blank</object-name>
+    <object-name>Blank.001</object-name>
+    <object-name>BlowerLever</object-name>
+    <object-name>TempLever</object-name>
+    <object-name>BrakeLever</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.1 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+    </emission>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>ThrottleLever</object-name>
-  <object-name>ThrottleCap</object-name>
-  <property>controls/engines/engine[0]/throttle</property>
-  <min-deg>-70</min-deg>
-  <max-deg>0</max-deg>
-  <factor>-70</factor>
-  <center>
-   <x-m>0.20</x-m>
-   <y-m>-0.06</y-m>
-   <z-m>-0.19</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>ThrottleLever</object-name>
+    <object-name>ThrottleCap</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <min-deg>-70</min-deg>
+    <max-deg>0</max-deg>
+    <factor>-70</factor>
+    <center>
+      <x-m>  0.20 </x-m>
+      <y-m> -0.06 </y-m>
+      <z-m> -0.19 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>ThrottleUp</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/engines/engine[0]/throttle</property>
-     <step type="double">0.05</step>
-   </binding>          
-  </action>
- </animation>
-                                    
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>ThrottleDn</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/engines/engine[0]/throttle</property>
-     <step type="double">-0.05</step>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>ThrottleUp</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>ThrottleDn</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
 
  <animation>
   <type>rotate</type>
@@ -168,10 +168,10 @@
      <command>property-adjust</command>
      <property>/controls/engines/engine[0]/propeller-pitch</property>
      <step type="double">0.05</step>
-   </binding>          
+   </binding>
   </action>
  </animation>
-                                    
+
  <animation>
   <type>pick</type>
   <visible>false</visible>
@@ -183,7 +183,7 @@
      <command>property-adjust</command>
      <property>/controls/engines/engine[0]/propeller-pitch</property>
      <step type="double">-0.05</step>
-   </binding>          
+   </binding>
   </action>
  </animation>
 
@@ -218,10 +218,10 @@
      <command>property-adjust</command>
      <property>/controls/engines/engine[0]/mixture</property>
      <step type="double">0.05</step>
-   </binding>          
+   </binding>
   </action>
  </animation>
-                                    
+
  <animation>
   <type>pick</type>
   <visible>false</visible>
@@ -745,7 +745,7 @@
                                     
  <model>
   <name>Compass</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/MagneticCompass/MagneticCompass.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
   <offsets>
    <x-m>0.01</x-m>
    <y-m>-0.015</y-m>
@@ -755,7 +755,7 @@
 
  <model>
   <name>WarningPanel</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/WarningPanel/WarningPanel.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/WarningPanel/WarningPanel.xml</path>
   <offsets>
    <x-m>0.03</x-m>
    <y-m>-0.015</y-m>
@@ -765,7 +765,7 @@
 
  <model>
   <name>ALT1</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/Altimeter/Altimeter.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.395</y-m>
@@ -775,7 +775,7 @@
 
  <model>
   <name>AI1</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/AI/AI.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/AI/AI.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.245</y-m>
@@ -785,7 +785,7 @@
 
  <model>
   <name>GPS</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/LX500/LX500.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/LX500/LX500.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.155</y-m>
@@ -795,7 +795,7 @@
 
  <model>
   <name>ENG</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/MPFuel/MPFuel.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.125</y-m>
@@ -805,7 +805,7 @@
 
  <model>
   <name>ASI</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/ASI/ASI.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.215</y-m>
@@ -815,7 +815,7 @@
 
  <model>
   <name>AI2</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/AI/AI.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/AI/AI.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.305</y-m>
@@ -825,7 +825,7 @@
 
  <model>
   <name>ALT2</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/Altimeter/Altimeter.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.335</y-m>
@@ -835,7 +835,7 @@
 
  <model>
   <name>KI204</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KI204/KI204.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KI204/KI204.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.155</y-m>
@@ -845,7 +845,7 @@
  
  <model>
   <name>RPM</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/RPM/RPM.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.125</y-m>
@@ -855,7 +855,7 @@
  
  <model>
   <name>Slip/Turn</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/Turn/Turn.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.215</y-m>
@@ -865,7 +865,7 @@
 
  <model>
   <name>KI525A</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KI525A/KI525A.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KI525A/KI525A.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.305</y-m>
@@ -875,7 +875,7 @@
 
  <model>
   <name>VSI</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/VSI/VSI.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.395</y-m>
@@ -885,7 +885,7 @@
 
  <model>
   <name>EGT</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/EGT-OAT/EGT-OAT.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.354</y-m>
@@ -895,7 +895,7 @@
 
  <model>
   <name>OIL</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/OilGauge/OilGauge.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.292</y-m>
@@ -905,7 +905,7 @@
 
  <model>
   <name>CHT</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/FP-CHT/FP-CHT.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/FP-CHT/FP-CHT.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.230</y-m>
@@ -915,7 +915,7 @@
 
  <model>
   <name>BATT</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/BatteryGauge/BatteryGauge.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.292</y-m>
@@ -925,7 +925,7 @@
 
  <model>
   <name>FUEL</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/FuelGauge/FuelGauge.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.230</y-m>
@@ -935,7 +935,7 @@
 
  <model>
   <name>AudioPanel</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KMA26/KMA26.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KMA26/KMA26.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.015</y-m>
@@ -945,7 +945,7 @@
 
  <model>
   <name>NavComm</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KX155A/KX155A.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KX155A/KX155A.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.015</y-m>
@@ -955,7 +955,7 @@
 
  <model>
   <name>Nav</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KN53/KN53.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KN53/KN53.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.015</y-m>
@@ -965,7 +965,7 @@
 
  <model>
   <name>Transponder</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KT76A/KT76A.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.015</y-m>
@@ -975,7 +975,7 @@
 
  <model>
   <name>UHF</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/UHFRadio/UHFRadio.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/UHFRadio/UHFRadio.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>-0.0485</y-m>
@@ -985,7 +985,7 @@
  
  <model>
   <name>G</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/GMeter/GMeter.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/GMeter/GMeter.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.025</y-m>
@@ -997,7 +997,7 @@
 
  <model>
   <name>Switches</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/SwitchPanel/SwitchPanel.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/SwitchPanel/SwitchPanel.xml</path>
   <offsets>
    <x-m>0.040</x-m>
    <y-m>-0.030</y-m>
@@ -1008,7 +1008,7 @@
 
  <model>
   <name>Switches</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/KA51B/KA51B.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KA51B/KA51B.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.125</y-m>
@@ -1018,7 +1018,7 @@
 
  <model>
   <name>DME</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/DME/DME.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/DME/DME.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.305</y-m>
@@ -1028,7 +1028,7 @@
 
  <model>
   <name>ELT</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/ELT/ELT.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/ELT/ELT.xml</path>
   <offsets>
    <x-m>0</x-m>
    <y-m>0.413</y-m>
@@ -1038,7 +1038,7 @@
 
  <model>
   <name>Clock</name>
-  <path>Aircraft/Grob-G115/Models/Instruments/Clock/Clock.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
   <offsets>
    <x-m>0.04</x-m>
    <y-m>0.27</y-m>
@@ -1876,45 +1876,45 @@
   </action>
  </animation>
 
- <animation>
-  <type>translate</type>
-  <object-name>BAvionicRelay</object-name>
-  <object-name>BAvionicRelayS</object-name>
-  <property>controls/circuit-breakers/avionic-relay</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BAvionicRelay</object-name>
+    <object-name>BAvionicRelayS</object-name>
+    <property>controls/circuit-breakers/avionic-relay</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BFlaps</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/flaps</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BFlaps</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/flaps</property>
+        <value type="bool">true</value>
+      </binding>
+    </action>
+  </animation>
 
- <animation>
-  <type>translate</type>
-  <object-name>BFlaps</object-name>
-  <object-name>BFlapsS</object-name>
-  <property>controls/circuit-breakers/flaps</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BFlaps</object-name>
+    <object-name>BFlapsS</object-name>
+    <property>controls/circuit-breakers/flaps</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>

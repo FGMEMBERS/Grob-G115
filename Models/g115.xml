@@ -4,10 +4,18 @@
 
   <path>g115.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Grob-G115/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>interieur</object-name>
     <object-name>ailes</object-name>
     <object-name>cacheA</object-name>
     <object-name>axeA</object-name>
@@ -58,6 +66,96 @@
     <object-name>lampeD</object-name>
     <object-name>lampe2</object-name>
   </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>axeA</object-name>
+    <object-name>roueA</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>roueG</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>roueD</object-name>
+    <object-name>bol</object-name>
+    <object-name>helice</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>echappe</object-name>
+    <object-name>antenne1</object-name>
+    <object-name>pitot</object-name>
+    <object-name>air</object-name>
+    <object-name>tourlampeG</object-name>
+    <object-name>tourlampeD</object-name>
+    <object-name>tourlampe2</object-name>
+    <object-name>ajout1</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Interior -->
+  <model>
+    <path>Aircraft/Grob-G115/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Immatriculatoin -->
+  <model>
+    <path>Aircraft/Grob-G115/Models/Immat/immat.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
 
   <!-- L'hélice --> 
   <!-- Séléction de l'objet visible en fonction des rpm -->
@@ -383,90 +481,76 @@
     </axis>
   </animation>
 
-  <!-- Interior -->
-
- <model>
-  <path>Aircraft/Grob-G115/Models/GrobInterior.xml</path>
-  <offsets>
-   <x-m>-1.8</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-0.2</z-m>
-  </offsets>
- </model>
-
   <!-- White Strobes -->
+  <model>
+    <path>Aircraft/Grob-G115/Models/light/strobe-white.xml</path>
+    <offsets>
+      <x-m> -1.60 </x-m>
+      <y-m> -5.00 </y-m>
+      <z-m> -0.25 </z-m>
+    </offsets>
+  </model>
 
  <model>
-  <path>Aircraft/Grob-G115/Models/strobe-white.xml</path>
+  <path>Aircraft/Grob-G115/Models/light/strobe-white.xml</path>
   <offsets>
-   <x-m>-1.60</x-m>
-   <y-m>-5.00</y-m>
-   <z-m>-0.25</z-m>
-  </offsets>
- </model>
-
- <model>
-  <path>Aircraft/Grob-G115/Models/strobe-white.xml</path>
-  <offsets>
-   <x-m>-1.60</x-m>
-   <y-m>5.00</y-m>
-   <z-m>-0.25</z-m>
+   <x-m> -1.60 </x-m>
+   <y-m>  5.00 </y-m>
+   <z-m> -0.25 </z-m>
   </offsets>
  </model>
 
   <!-- Red Strobe -->
-
- <model>
-  <path>Aircraft/Grob-G115/Models/strobe-red.xml</path>
-  <offsets>
-   <x-m>-0.44</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-0.80</z-m>
-  </offsets>
- </model>
+  <model>
+    <path>Aircraft/Grob-G115/Models/light/strobe-red.xml</path>
+    <offsets>
+      <x-m> -0.44 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -0.80 </z-m>
+    </offsets>
+  </model>
 
   <!-- Stbd Nav Lights -->
+  <model>
+    <path>Aircraft/Grob-G115/Models/light/navlight-green.xml</path>
+    <offsets>
+      <x-m> -1.50 </x-m>
+      <y-m>  5.00 </y-m>
+      <z-m> -0.25 </z-m>
+      <heading-deg>225</heading-deg>
+    </offsets>
+  </model>
 
- <model>
-  <path>Aircraft/Grob-G115/Models/navlight-green.xml</path>
-  <offsets>
-   <x-m>-1.50</x-m>
-   <y-m>5.00</y-m>
-   <z-m>-0.25</z-m>
-   <heading-deg>225</heading-deg>
-  </offsets>
- </model>
-
- <model>
-  <path>Aircraft/Grob-G115/Models/navlight-white.xml</path>
-  <offsets>
-   <x-m>-1.40</x-m>
-   <y-m>5.00</y-m>
-   <z-m>-0.25</z-m>
-   <heading-deg>140</heading-deg>
-  </offsets>
- </model>
+  <model>
+    <path>Aircraft/Grob-G115/Models/light/navlight-white.xml</path>
+    <offsets>
+      <x-m> -1.40 </x-m>
+      <y-m>  5.00 </y-m>
+      <z-m> -0.25 </z-m>
+      <heading-deg>140</heading-deg>
+    </offsets>
+  </model>
 
   <!-- Port Nav Lights -->
+  <model>
+    <path>Aircraft/Grob-G115/Models/light/navlight-red.xml</path>
+    <offsets>
+      <x-m> -1.50 </x-m>
+      <y-m> -5.00 </y-m>
+      <z-m> -0.25 </z-m>
+      <heading-deg>315</heading-deg>
+    </offsets>
+  </model>
 
- <model>
-  <path>Aircraft/Grob-G115/Models/navlight-red.xml</path>
-  <offsets>
-   <x-m>-1.50</x-m>
-   <y-m>-5.00</y-m>
-   <z-m>-0.25</z-m>
-   <heading-deg>315</heading-deg>
-  </offsets>
- </model>
-
- <model>
-  <path>Aircraft/Grob-G115/Models/navlight-white.xml</path>
-  <offsets>
-   <x-m>-1.40</x-m>
-   <y-m>-5.00</y-m>
-   <z-m>-0.25</z-m>
-   <heading-deg>40</heading-deg>
-  </offsets>
- </model>
+  <model>
+    <path>Aircraft/Grob-G115/Models/light/navlight-white.xml</path>
+    <offsets>
+      <x-m> -1.40 </x-m>
+      <y-m> -5.00 </y-m>
+      <z-m> -0.25 </z-m>
+      <heading-deg>40</heading-deg>
+    </offsets>
+  </model>
 
 </PropertyList>
+
