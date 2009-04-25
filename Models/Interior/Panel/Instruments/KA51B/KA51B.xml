@@ -1,7 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <path>KA51B.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>Screws</object-name>
+    <object-name>Cylinder</object-name>
+    <object-name>Switch-InstLight</object-name>
+    <object-name>Switch-InstLight2</object-name>
+    <object-name>Switch</object-name>
+  </animation>
 
 </PropertyList>

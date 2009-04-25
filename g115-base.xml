@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -27,6 +27,9 @@
 
     <model>
       <path archive="y">Aircraft/Grob-G115/Models/g115.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <multiplay>
@@ -57,19 +60,48 @@
 
     <menubar include="Dialogs/g115-menu.xml"/>
 
-  </sim>
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>200</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Copilot</name>
+      <weight-lb>150</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Bagages</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>45</max-lb>
+    </weight>
+
+   </sim>
 
   <input>
     <keyboard include="Nasal/g115-keyboard.xml"/>
   </input>
 
+  <controls>
+    <lighting>
+      <instruments-norm>0.5</instruments-norm>
+      <panel-norm>0.5</panel-norm>
+    </lighting>
+  </controls>
+ 
   <nasal>
+    <zkv500>
+      <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
+    </zkv500>
     <g115>
       <file>Aircraft/Generic/limits.nas</file>
       <file>Aircraft/Grob-G115/Nasal/doors.nas</file>
       <file>Aircraft/Grob-G115/Nasal/g115.nas</file>
       <file>Aircraft/Grob-G115/Nasal/liveries.nas</file>
       <file>Aircraft/Grob-G115/Nasal/immat.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/light.nas</file>
       <file>Aircraft/Grob-G115/Nasal/g115-electrical.nas</file>
       <file>Aircraft/Grob-G115/Nasal/instruments.nas</file>
       <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/WarningPanel/WarningPanel.nas</file>

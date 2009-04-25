@@ -1,7 +1,15 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <path>DME.ac</path>
+
+  <animation>
+    <object-name>Plane</object-name>
+    <object-name>avant</object-name>
+    <object-name>Screws</object-name>
+    <object-name>tour</object-name>
+    <object-name>button</object-name>
+  </animation>
 
 </PropertyList>
