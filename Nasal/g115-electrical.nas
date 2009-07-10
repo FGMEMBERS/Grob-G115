@@ -522,7 +522,7 @@ essential_bus = func() {
 avionic_bus_1 = func() {
     # fed from the "virtual" bus via the avionic bus 1 breaker (15A)
     if ( getprop("/controls/circuit-breakers/avionic-bus-1") ) {
-    	avionic_bus_2_volts = vbus_volts;
+    	avionic_bus_1_volts = vbus_volts;
     } else {
 	main_bus_volts = 0.0;
     }	
