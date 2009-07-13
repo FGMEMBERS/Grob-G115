@@ -525,7 +525,7 @@ avionic_bus_1 = func() {
     	avionic_bus_1_volts = vbus_volts;
     } else {
 	main_bus_volts = 0.0;
-    }	
+    }
 
     load = 0.0;
 

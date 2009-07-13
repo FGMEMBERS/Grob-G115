@@ -864,9 +864,9 @@
 
  <model>
   <name>KI525A</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KI525A/KI525A.xml</path>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/ki525a.xml</path>
   <offsets>
-   <x-m>0</x-m>
+   <x-m>0.002</x-m>
    <y-m>0.305</y-m>
    <z-m>0.087</z-m>
   </offsets>
@@ -1006,12 +1006,13 @@
  </model>
 
  <model>
-  <name>Switches</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KA51B/KA51B.xml</path>
+  <name>Switches1</name>
+  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/ka51b.xml</path>
   <offsets>
-   <x-m>0</x-m>
+   <x-m>0.001</x-m>
    <y-m>0.125</y-m>
    <z-m>0.020</z-m>
+   <roll-deg>90</roll-deg>
   </offsets>
  </model>
 
