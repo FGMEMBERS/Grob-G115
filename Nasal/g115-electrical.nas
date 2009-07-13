@@ -525,7 +525,7 @@ avionic_bus_1 = func() {
     	avionic_bus_1_volts = vbus_volts;
     } else {
 	main_bus_volts = 0.0;
-    }
+    }	
 
     load = 0.0;
 
@@ -538,7 +538,7 @@ avionic_bus_1 = func() {
 
     # HSI (3A)
     if ( getprop("/controls/circuit-breakers/hsi") ) {
-        setprop("/systems/electrical/outputs/hsi", avionic_bus_1_volts);
+        setprop("/systems/electrical/outputs/hsi", avionic_bus_1_volts / 2);
 	load += 1.5;
     } else {
         setprop("/systems/electrical/outputs/hsi", 0.0);

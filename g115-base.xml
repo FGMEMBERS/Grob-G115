@@ -90,6 +90,15 @@
       <panel-norm>0.5</panel-norm>
     </lighting>
   </controls>
+
+    <instrumentation>
+        <kcs55 include="Models/Interior/Panel/Instruments/kcs55/kcs55.xml"/>
+        <kcs55 n="0">
+          <ka51>
+	    <slaved>true</slaved>
+	  </ka51>
+	</kcs55>
+    </instrumentation>
  
   <nasal>
     <zkv500>
@@ -106,6 +115,10 @@
       <file>Aircraft/Grob-G115/Nasal/instruments.nas</file>
       <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/WarningPanel/WarningPanel.nas</file>
       <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KMA26/KMA26.nas</file>
+      <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/kcs55.nas</file>
+            <script><![CDATA[
+              KCS55.new();
+            ]]></script>
     </g115>
   </nasal>
 
