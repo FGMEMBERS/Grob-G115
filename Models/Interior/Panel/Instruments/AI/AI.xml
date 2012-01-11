@@ -7,8 +7,6 @@
   <animation>
     <object-name>Bezel</object-name>
     <object-name>Case</object-name>
-    <object-name>AdjustCCW</object-name>
-    <object-name>AdjustCW</object-name>
     <object-name>AdjustKnob</object-name>
     <object-name>CageKnob</object-name>
     <object-name>Aircraft</object-name>
@@ -18,6 +16,8 @@
     <object-name>RollReference</object-name>
 
     <object-name>vitre</object-name>
+    <object-name>AdjustCCW</object-name>
+    <object-name>AdjustCW</object-name>
   </animation>
 
   <animation>
@@ -28,7 +28,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 

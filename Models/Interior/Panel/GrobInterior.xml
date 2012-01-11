@@ -2,7 +2,137 @@
 
 <PropertyList>
 
-  <path>GrobInterior.ac</path>
+  <path>panel.ac</path>
+
+  <animation>
+    <object-name>planchet</object-name>
+    <object-name>console</object-name>
+    <object-name>RearCushionL</object-name>
+    <object-name>SeatCushionL</object-name>
+    <object-name>RearCushionR</object-name>
+    <object-name>SeatCushionR</object-name>
+    <object-name>GlareShieldOuter</object-name>
+    <object-name>PanelL</object-name>
+    <object-name>PanelR</object-name>
+    <object-name>PanelControls</object-name>
+    <object-name>TempParking</object-name>
+    <object-name>StickL</object-name>
+    <object-name>GripL</object-name>
+    <object-name>StickR</object-name>
+    <object-name>GripR</object-name>
+    <object-name>poignees</object-name>
+    <object-name>FuelCock</object-name>
+    <object-name>TrimIndicator</object-name>
+    <object-name>ThrotCovPlate</object-name>
+    <object-name>screws</object-name>
+    <object-name>MixtureGateHousing</object-name>
+    <object-name>MixtureGate</object-name>
+    <object-name>MixLever</object-name>
+    <object-name>MixCap</object-name>
+    <object-name>PropLever</object-name>
+    <object-name>PropCap</object-name>
+    <object-name>ThrottleLever</object-name>
+    <object-name>ThrottleCap</object-name>
+    <object-name>TrimWheel</object-name>
+    <object-name>ThrottleFriction</object-name>
+    <object-name>TankSelect</object-name>
+    <object-name>BlowerLever</object-name>
+    <object-name>TempLever</object-name>
+    <object-name>BrakeLever</object-name>
+    <object-name>background</object-name>
+    <object-name>FlapSwitch</object-name>
+    <object-name>AlternAir</object-name>
+    <object-name>Blank</object-name>
+    <object-name>FlapIndicator</object-name>
+    <object-name>altstatic</object-name>
+    <object-name>bouton</object-name>
+    <object-name>GPSSocket</object-name>
+    <object-name>supportfusibles</object-name>
+    <object-name>BEssBusS</object-name>
+    <object-name>BEssBus</object-name>
+    <object-name>BMainBusS</object-name>
+    <object-name>BMainBus</object-name>
+    <object-name>BGenS</object-name>
+    <object-name>BGen</object-name>
+    <object-name>BAvionicRelayS</object-name>
+    <object-name>BAvionicRelay</object-name>
+    <object-name>BFlapsS</object-name>
+    <object-name>BFlaps</object-name>
+    <object-name>BLoVoltWarningS</object-name>
+    <object-name>BLoVoltWarning</object-name>
+    <object-name>BTandSS</object-name>
+    <object-name>BTandS</object-name>
+    <object-name>BFuelLoLevS</object-name>
+    <object-name>BFuelLoLev</object-name>
+    <object-name>BAttIndic1S</object-name>
+    <object-name>BAttIndic1</object-name>
+    <object-name>BStallWarningS</object-name>
+    <object-name>BStallWarning</object-name>
+    <object-name>BLandLightS</object-name>
+    <object-name>BLandLight</object-name>
+    <object-name>BMapLightS</object-name>
+    <object-name>BMapLight</object-name>
+    <object-name>BNavLightsS</object-name>
+    <object-name>BNavLights</object-name>
+    <object-name>BEngInstr1S</object-name>
+    <object-name>BEngInstr1</object-name>
+    <object-name>BInstrLightsS</object-name>
+    <object-name>BInstrLights</object-name>
+    <object-name>BRPMIndS</object-name>
+    <object-name>BRPMInd</object-name>
+    <object-name>BAvionicBus2S</object-name>
+    <object-name>BAvionicBus2</object-name>
+    <object-name>BDMES</object-name>
+    <object-name>BDME</object-name>
+    <object-name>BAudioMarkerS</object-name>
+    <object-name>BAudioMarker</object-name>
+    <object-name>BAttIndic2S</object-name>
+    <object-name>BAttIndic2</object-name>
+    <object-name>BGPSS</object-name>
+    <object-name>BGPS</object-name>
+    <object-name>BCom2Nav2S</object-name>
+    <object-name>BCom2Nav2</object-name>
+    <object-name>BAvionicBlowerS</object-name>
+    <object-name>BAvionicBlower</object-name>
+    <object-name>BPitotHeatS</object-name>
+    <object-name>BPitotHeat</object-name>
+    <object-name>BFuelPumpS</object-name>
+    <object-name>BFuelPump</object-name>
+    <object-name>BEngInstr2S</object-name>
+    <object-name>BEngInstr2</object-name>
+    <object-name>BStrobeWhiteS</object-name>
+    <object-name>BStrobeWhite</object-name>
+    <object-name>BStrobeRedS</object-name>
+    <object-name>BStrobeRed</object-name>
+    <object-name>BPanelLightsS</object-name>
+    <object-name>BPanelLights</object-name>
+    <object-name>BStartCtrlS</object-name>
+    <object-name>BStartCtrl</object-name>
+    <object-name>BGenCtrlS</object-name>
+    <object-name>BGenCtrl</object-name>
+
+    <object-name>TempUp</object-name>
+    <object-name>BlowerUp</object-name>
+    <object-name>TempDn</object-name>
+    <object-name>BlowerDn</object-name>
+    <object-name>ParkBrakeOn</object-name>
+    <object-name>ParkBrakeOff</object-name>
+    <object-name>ThrottleUp</object-name>
+    <object-name>PropUp</object-name>
+    <object-name>MixtureUp</object-name>
+    <object-name>FlapsFull</object-name>
+    <object-name>FlapsLand</object-name>
+    <object-name>FlapsTO</object-name>
+    <object-name>FlapsUp</object-name>
+    <object-name>ThrottleDn</object-name>
+    <object-name>PropDn</object-name>
+    <object-name>MixtureDn</object-name>
+    <object-name>TrimDn</object-name>
+    <object-name>TrimUp</object-name>
+    <object-name>TankLeft</object-name>
+    <object-name>TankBoth</object-name>
+    <object-name>TankRight</object-name>
+  </animation>
 
   <animation>
     <type>material</type>
@@ -137,25 +267,25 @@
     </action>
   </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>PropLever</object-name>
-  <object-name>PropCap</object-name>
-  <property>controls/engines/engine[0]/propeller-pitch</property>
-  <min-deg>-70</min-deg>
-  <max-deg>0</max-deg>
-  <factor>-70</factor>
-  <center>
-   <x-m>0.20</x-m>
-   <y-m>-0.06</y-m>
-   <z-m>-0.19</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>PropLever</object-name>
+    <object-name>PropCap</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <min-deg> -70 </min-deg>
+    <max-deg>   0 </max-deg>
+    <factor> -70 </factor>
+    <center>
+      <x-m>  0.20 </x-m>
+      <y-m> -0.06 </y-m>
+      <z-m> -0.19 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
  <animation>
   <type>pick</type>
@@ -1918,3 +2048,4 @@
   </animation>
 
 </PropertyList>
+

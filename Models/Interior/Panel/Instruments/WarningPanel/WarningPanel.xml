@@ -29,13 +29,13 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-assign</command>
-	<property>/instrumentation/warning-panel/test</property>
+        <property>/instrumentation/warning-panel/test</property>
         <value type="int">1</value>
       </binding>          
       <mod-up>
         <binding>
           <command>property-assign</command>
-	  <property>/instrumentation/warning-panel/test</property>
+          <property>/instrumentation/warning-panel/test</property>
           <value type="int">0</value>
         </binding>          
       </mod-up>
@@ -51,7 +51,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-assign</command>
-	<property>/instrumentation/warning-panel/night</property>
+        <property>/instrumentation/warning-panel/night</property>
         <value type="int">0</value>
       </binding>          
     </action>
@@ -66,7 +66,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-assign</command>
-	<property>/instrumentation/warning-panel/night</property>
+        <property>/instrumentation/warning-panel/night</property>
         <value type="int">1</value>
       </binding>          
     </action>
@@ -76,11 +76,11 @@
     <type>rotate</type>
     <object-name>DayNightSwitch</object-name>
     <property>/instrumentation/warning-panel/night</property>
-    <factor>70</factor>
+    <factor> 70 </factor>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
     <center>
       <x-m>  0.0000 </x-m>
@@ -93,9 +93,9 @@
     <object-name>WarnLoVolt</object-name>
     <type>material</type>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
+      <red>   1 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
       <factor-prop>/instrumentation/warning-panel/lovolt-norm</factor-prop>
     </emission>
   </animation>
@@ -104,9 +104,9 @@
     <object-name>WarnGen</object-name>
     <type>material</type>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
+      <red>   1 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
       <factor-prop>/instrumentation/warning-panel/gen-norm</factor-prop>
     </emission>
   </animation>
@@ -115,9 +115,9 @@
     <object-name>WarnLoOil</object-name>
     <type>material</type>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
+      <red>   1 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
       <factor-prop>/instrumentation/warning-panel/looil-norm</factor-prop>
     </emission>
   </animation>
@@ -126,9 +126,9 @@
     <object-name>WarnFuel</object-name>
     <type>material</type>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
+      <red>   1 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
       <factor-prop>/instrumentation/warning-panel/fuel-norm</factor-prop>
     </emission>
   </animation>
@@ -137,9 +137,9 @@
     <object-name>WarnStarter</object-name>
     <type>material</type>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
+      <red>   1 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
       <factor-prop>/instrumentation/warning-panel/starter-norm</factor-prop>
     </emission>
   </animation>
