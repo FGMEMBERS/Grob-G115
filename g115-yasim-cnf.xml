@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="g115-base.xml">
 
   <sim>
 
     <description>Grob G115 (YASim)</description>
+    <author>Emmanuel BARANGER (3D,FDM), Jon STOCKILL (Panel, FDM)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">g115-yasim</aero>
  

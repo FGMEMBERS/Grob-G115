@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,6 +7,7 @@
   <animation>
     <object-name>planchet</object-name>
     <object-name>console</object-name>
+    <object-name>console2</object-name>
     <object-name>RearCushionL</object-name>
     <object-name>SeatCushionL</object-name>
     <object-name>RearCushionR</object-name>
@@ -287,172 +288,172 @@
     </axis>
   </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>PropUp</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/engines/engine[0]/propeller-pitch</property>
-     <step type="double">0.05</step>
-   </binding>
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>PropUp</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>PropDn</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/engines/engine[0]/propeller-pitch</property>
-     <step type="double">-0.05</step>
-   </binding>
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>PropDn</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>MixLever</object-name>
-  <object-name>MixCap</object-name>
-  <property>controls/engines/engine[0]/mixture</property>
-  <min-deg>-70</min-deg>
-  <max-deg>0</max-deg>
-  <factor>-70</factor>
-  <center>
-   <x-m>0.20</x-m>
-   <y-m>-0.06</y-m>
-   <z-m>-0.19</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>MixLever</object-name>
+    <object-name>MixCap</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <min-deg> -70 </min-deg>
+    <max-deg>   0 </max-deg>
+    <factor>  -70 </factor>
+    <center>
+      <x-m>  0.20 </x-m>
+      <y-m> -0.06 </y-m>
+      <z-m> -0.19 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>MixtureUp</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/engines/engine[0]/mixture</property>
-     <step type="double">0.05</step>
-   </binding>
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>MixtureUp</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>MixtureDn</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/engines/engine[0]/mixture</property>
-     <step type="double">-0.05</step>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>MixtureDn</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
 
- <animation> 
-  <type>translate</type>
-  <object-name>MixtureGate</object-name>
-  <property>controls/engines/engine[0]/mixturegate</property>
-  <factor>0.006</factor>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation> 
+    <type>translate</type>
+    <object-name>MixtureGate</object-name>
+    <property>controls/engines/engine[0]/mixturegate</property>
+    <factor> 0.006 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>MixtureGate</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/engines/engine[0]/mixturegate</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+   <type>pick</type>
+   <visible>true</visible>
+   <object-name>MixtureGate</object-name>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+       <command>property-toggle</command>
+       <property>/controls/engines/engine[0]/mixturegate</property>
+       <value type="bool">true</value>
+     </binding>          
+    </action>
+  </animation>
 
- <animation> 
-  <type>translate</type> 
-  <object-name>TrimIndicator</object-name>
-  <property>controls/flight/elevator-trim</property>
-  <factor>0.03</factor>
-  <axis>
-   <x>-0.06</x>
-   <y>0</y>
-   <z>0.0175</z>
-  </axis>
- </animation>
+  <animation> 
+    <type>translate</type> 
+    <object-name>TrimIndicator</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>0.03</factor>
+    <axis>
+     <x>-0.06</x>
+     <y>0</y>
+     <z>0.0175</z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>TrimUp</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/flight/elevator-trim</property>
-     <step type="double">-0.05</step>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>TrimUp</object-name>
+    <action>
+     <button>0</button>
+     <repeatable>true</repeatable>
+     <binding>
+       <command>property-adjust</command>
+       <property>/controls/flight/elevator-trim</property>
+       <step type="double">-0.05</step>
+     </binding>          
+    </action>
+  </animation>
                                     
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>TrimDn</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-adjust</command>
-     <property>/controls/flight/elevator-trim</property>
-     <step type="double">0.05</step>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>TrimDn</object-name>
+    <action>
+     <button>0</button>
+     <repeatable>true</repeatable>
+     <binding>
+       <command>property-adjust</command>
+       <property>/controls/flight/elevator-trim</property>
+       <step type="double">0.05</step>
+     </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>TankSelect</object-name>
-  <property>controls/fuel/switch-position</property>
-  <factor>90</factor>
-  <offset>0</offset>
-  <center>
-   <x-m>0.2</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.06</z-m>
-  </center>
-  <axis>
-   <x>-0.005587</x>
-   <y>0</y>
-   <z>-0.019204</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>TankSelect</object-name>
+    <property>controls/fuel/switch-position</property>
+    <factor>90</factor>
+    <offset>0</offset>
+    <center>
+     <x-m> 0.20 </x-m>
+     <y-m> 0.00 </y-m>
+     <z-m> 0.06 </z-m>
+    </center>
+    <axis>
+     <x> -0.005587 </x>
+     <y>  0.000000 </y>
+     <z> -0.019204 </z>
+    </axis>
+  </animation>
                                                                 
  <animation>
   <type>pick</type>
@@ -769,94 +770,94 @@
   </action>
  </animation>
                                     
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>FlapsTO</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-assign</command>
-     <property>/controls/flight/flaps</property>
-     <value type="double">0.25</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>FlapsTO</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/flaps</property>
+        <value type="double">0.25</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>FlapsLand</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-assign</command>
-     <property>/controls/flight/flaps</property>
-     <value type="double">0.75</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>FlapsLand</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/flaps</property>
+        <value type="double">0.75</value>
+      </binding>          
+    </action>
+  </animation>
                                     
- <animation>
-  <type>pick</type>
-  <visible>false</visible>
-  <object-name>FlapsFull</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>true</repeatable>
-   <binding>
-     <command>property-assign</command>
-     <property>/controls/flight/flaps</property>
-     <value type="double">1.0</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>FlapsFull</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/flaps</property>
+        <value type="double">1.0</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>AlternAir</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/anti-ice/carb-heat</property>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>AlternAir</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/anti-ice/carb-heat</property>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>translate</type>
-  <visible>true</visible>
-  <object-name>AlternAir</object-name>
-  <property>/controls/anti-ice/carb-heat</property>
-  <factor>0.01</factor>
-  <axis>
-   <x>1.7</x>
-   <y>0</y>
-   <z>1</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <visible>true</visible>
+    <object-name>AlternAir</object-name>
+    <property>/controls/anti-ice/carb-heat</property>
+    <factor>0.01</factor>
+    <axis>
+      <x> 1.7 </x>
+      <y> 0.0 </y>
+      <z> 1.0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>FuelCock</object-name>
-  <property>controls/fuel/fuelcock</property>
-  <factor>90</factor>
-  <center>
-   <x-m>0.71</x-m>
-   <y-m>0</y-m>
-   <z-m>0</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>0</y>
-   <z>1</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>FuelCock</object-name>
+    <property>controls/fuel/fuelcock</property>
+    <factor>90</factor>
+    <center>
+      <x-m> 0.71 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.00 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
 
   <animation>
     <type>pick</type>
@@ -892,375 +893,372 @@
     </offsets>
   </model>
 
- <model>
-  <name>ALT1</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.395</y-m>
-   <z-m>0.177</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>ALT1</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.395 </y-m>
+      <z-m> 0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>AI1</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/AI/AI.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.245</y-m>
-   <z-m>0.177</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>AI1</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/AI/AI.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.245 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>GPS</name>
-  <path>Aircraft/Instruments-3d/zkv500/ZKV500.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.155</y-m>
-   <z-m>0.177</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>GPS</name>
+    <path>Aircraft/Instruments-3d/zkv500/ZKV500.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.155 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>ENG</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.125</y-m>
-   <z-m>0.177</z-m>
-   </offsets>
- </model>
+  <model>
+    <name>ENG</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>ASI</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.215</y-m>
-   <z-m>0.177</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>ASI</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.215 </y-m>
+      <z-m> 0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>AI2</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/AI/AI.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.305</y-m>
-   <z-m>0.177</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>AI2</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/AI/AI.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.305 </y-m>
+      <z-m> 0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>ALT2</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.335</y-m>
-   <z-m>0.177</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>ALT2</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.335 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>KI204</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KI204/KI204.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.155</y-m>
-   <z-m>0.087</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>KI204</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KI204/KI204.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.155 </y-m>
+      <z-m>  0.087 </z-m>
+    </offsets>
+  </model>
  
- <model>
-  <name>RPM</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.125</y-m>
-   <z-m>0.087</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>RPM</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.087 </z-m>
+    </offsets>
+  </model>
  
- <model>
-  <name>Slip/Turn</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.215</y-m>
-   <z-m>0.087</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>Slip/Turn</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.215 </y-m>
+      <z-m> 0.087 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>KI525A</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/ki525a.xml</path>
-  <offsets>
-   <x-m>0.002</x-m>
-   <y-m>0.305</y-m>
-   <z-m>0.087</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>KI525A</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/ki525a.xml</path>
+    <offsets>
+      <x-m> 0.002 </x-m>
+      <y-m> 0.305 </y-m>
+      <z-m> 0.087 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>VSI</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.395</y-m>
-   <z-m>0.087</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>VSI</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.395 </y-m>
+      <z-m> 0.087 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>EGT</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.354</y-m>
-   <z-m>0.103</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>EGT</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.354 </y-m>
+      <z-m>  0.103 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>OIL</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.292</y-m>
-   <z-m>0.103</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>OIL</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.292 </y-m>
+      <z-m>  0.103 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>CHT</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/FP-CHT/FP-CHT.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.230</y-m>
-   <z-m>0.103</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>CHT</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/FP-CHT/FP-CHT.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m>  0.103 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>BATT</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.292</y-m>
-   <z-m>0.041</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>BATT</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.292 </y-m>
+      <z-m>  0.041 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>FUEL</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.230</y-m>
-   <z-m>0.041</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>FUEL</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m>  0.041 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>AudioPanel</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KMA26/KMA26.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.015</y-m>
-   <z-m>0.206</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>AudioPanel</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KMA26/KMA26.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.015 </y-m>
+      <z-m>  0.206 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>NavComm</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KX155A/KX155A.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.015</y-m>
-   <z-m>0.153</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>NavComm</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KX155A/KX155A.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.015 </y-m>
+      <z-m>  0.153 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>Nav</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KN53/KN53.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.015</y-m>
-   <z-m>0.119</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>Nav</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KN53/KN53.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.015 </y-m>
+      <z-m>  0.119 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>Transponder</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.015</y-m>
-   <z-m>0.077</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>Transponder</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.015 </y-m>
+      <z-m>  0.077 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>UHF</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/UHFRadio/UHFRadio.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>-0.0485</y-m>
-   <z-m>0.0365</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>UHF</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/UHFRadio/UHFRadio.xml</path>
+    <offsets>
+      <x-m>  0.0000 </x-m>
+      <y-m> -0.0485 </y-m>
+      <z-m>  0.0365 </z-m>
+    </offsets>
+  </model>
  
- <model>
-  <name>G</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/GMeter/GMeter.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.025</y-m>
-   <z-m>0.036</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>G</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/GMeter/GMeter.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.025 </y-m>
+      <z-m> 0.036 </z-m>
+    </offsets>
+  </model>
 
+  <model>
+    <name>Switches</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/SwitchPanel/SwitchPanel.xml</path>
+    <offsets>
+      <x-m>  0.040 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m> -0.047 </z-m>
+      <pitch-deg> -11.31 </pitch-deg>
+    </offsets>
+  </model>
 
+  <model>
+    <name>Switches1</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/ka51b.xml</path>
+    <offsets>
+      <x-m> 0.001 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.020 </z-m>
+      <roll-deg> 90 </roll-deg>
+    </offsets>
+  </model>
 
- <model>
-  <name>Switches</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/SwitchPanel/SwitchPanel.xml</path>
-  <offsets>
-   <x-m>0.040</x-m>
-   <y-m>-0.030</y-m>
-   <z-m>-0.047</z-m>
-   <pitch-deg>-11.31</pitch-deg>
-  </offsets>
- </model>
+  <model>
+    <name>DME</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/DME/DME.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.305 </y-m>
+      <z-m> 0.020 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>Switches1</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/ka51b.xml</path>
-  <offsets>
-   <x-m>0.001</x-m>
-   <y-m>0.125</y-m>
-   <z-m>0.020</z-m>
-   <roll-deg>90</roll-deg>
-  </offsets>
- </model>
+  <model>
+    <name>ELT</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/ELT/ELT.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.413 </y-m>
+      <z-m> 0.020 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>DME</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/DME/DME.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.305</y-m>
-   <z-m>0.020</z-m>
-  </offsets>
- </model>
+  <model>
+    <name>Clock</name>
+    <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
+    <offsets>
+      <x-m>  0.04 </x-m>
+      <y-m>  0.27 </y-m>
+      <z-m> -0.03 </z-m>
+    </offsets>
+  </model>
 
- <model>
-  <name>ELT</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/ELT/ELT.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0.413</y-m>
-   <z-m>0.020</z-m>
-  </offsets>
- </model>
+  <!-- Breakers -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BStartCtrl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/start-ctrl</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
 
- <model>
-  <name>Clock</name>
-  <path>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
-  <offsets>
-   <x-m>0.04</x-m>
-   <y-m>0.27</y-m>
-   <z-m>-0.03</z-m>
-  </offsets>
- </model>
+  <animation>
+    <type>translate</type>
+    <object-name>BStartCtrl</object-name>
+    <object-name>BStartCtrlS</object-name>
+    <property>controls/circuit-breakers/start-ctrl</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
-<!-- Breakers -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BGenCtrl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/gen-ctrl</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BStartCtrl</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/start-ctrl</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BGenCtrl</object-name>
+    <object-name>BGenCtrlS</object-name>
+    <property>controls/circuit-breakers/gen-ctrl</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>translate</type>
-  <object-name>BStartCtrl</object-name>
-  <object-name>BStartCtrlS</object-name>
-  <property>controls/circuit-breakers/start-ctrl</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BStrobeWhite</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/strobe-white</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BGenCtrl</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/gen-ctrl</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
-
- <animation>
-  <type>translate</type>
-  <object-name>BGenCtrl</object-name>
-  <object-name>BGenCtrlS</object-name>
-  <property>controls/circuit-breakers/gen-ctrl</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BStrobeWhite</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/strobe-white</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
-
- <animation>
-  <type>translate</type>
-  <object-name>BStrobeWhite</object-name>
-  <object-name>BStrobeWhiteS</object-name>
-  <property>controls/circuit-breakers/strobe-white</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BStrobeWhite</object-name>
+    <object-name>BStrobeWhiteS</object-name>
+    <property>controls/circuit-breakers/strobe-white</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
                        
  <animation>
   <type>pick</type>
@@ -1655,89 +1653,89 @@
   </axis>
  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BNavLights</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/nav-lights</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BNavLights</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/nav-lights</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>translate</type>
-  <object-name>BNavLights</object-name>
-  <object-name>BNavLightsS</object-name>
-  <property>controls/circuit-breakers/nav-lights</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BNavLights</object-name>
+    <object-name>BNavLightsS</object-name>
+    <property>controls/circuit-breakers/nav-lights</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BEngInstr1</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/eng-instr-1</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BEngInstr1</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/eng-instr-1</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>translate</type>
-  <object-name>BEngInstr1</object-name>
-  <object-name>BEngInstr1S</object-name>
-  <property>controls/circuit-breakers/eng-instr-1</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BEngInstr1</object-name>
+    <object-name>BEngInstr1S</object-name>
+    <property>controls/circuit-breakers/eng-instr-1</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>BInstrLights</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-     <command>property-toggle</command>
-     <property>/controls/circuit-breakers/instr-lights</property>
-     <value type="bool">true</value>
-   </binding>          
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>BInstrLights</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/instr-lights</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
 
- <animation>
-  <type>translate</type>
-  <object-name>BInstrLights</object-name>
-  <object-name>BInstrLightsS</object-name>
-  <property>controls/circuit-breakers/instr-lights</property>
-  <factor>0.008</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>BInstrLights</object-name>
+    <object-name>BInstrLightsS</object-name>
+    <property>controls/circuit-breakers/instr-lights</property>
+    <factor>0.008</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
   <animation>
     <type>pick</type>
@@ -2048,4 +2046,3 @@
   </animation>
 
 </PropertyList>
-

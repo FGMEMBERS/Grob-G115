@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <sim include="Nasal/views.xml">
 
+    <description>Grob G115 (YASim)</description>
     <author>BARANGER Emmanuel (3D), Jon Stockill (FDM, Panel, texture)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
@@ -111,12 +112,14 @@
   </instrumentation>
  
   <nasal>
+    <doors>
+      <file>Aircraft/Grob-G115/Nasal/doors.nas</file>
+    </doors>
     <zkv500>
       <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
     </zkv500>
     <g115>
       <file>Aircraft/Generic/limits.nas</file>
-      <file>Aircraft/Grob-G115/Nasal/doors.nas</file>
       <file>Aircraft/Grob-G115/Nasal/g115.nas</file>
       <file>Aircraft/Grob-G115/Nasal/liveries.nas</file>
       <file>Aircraft/Grob-G115/Nasal/immat.nas</file>
@@ -126,11 +129,11 @@
       <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/WarningPanel/WarningPanel.nas</file>
       <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KMA26/KMA26.nas</file>
       <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/kcs55.nas</file>
-            <script><![CDATA[
-              KCS55.new();
-            ]]></script>
+        <script><![CDATA[
+          KCS55.new();
+          ]]>
+        </script>
     </g115>
   </nasal>
 
 </PropertyList>
-

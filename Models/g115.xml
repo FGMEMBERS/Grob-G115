@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -114,39 +114,57 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>lampe2</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>lampe2</object-name>
+  </effect>
+  
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>cacheA</object-name>
@@ -168,25 +186,32 @@
     <object-name>ajout1</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>verriere</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>verriere</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-    <object-name>lampeG</object-name>
-    <object-name>lampeD</object-name>
-    <object-name>lampe2</object-name>
-  </animation>
-
+  <effect>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>bol</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>direction</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>antenne1</object-name>
+    <object-name>pitot</object-name>
+    <object-name>air</object-name>
+    <object-name>tourlampeG</object-name>
+    <object-name>tourlampeD</object-name>
+    <object-name>tourlampe2</object-name>
+    <object-name>ajout1</object-name>
+  </effect>
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Grob-G115/Models/shadow.xml</path>
@@ -199,6 +224,7 @@
 
   <!-- Interior -->
   <model>
+    <name>Interieur</name>
     <path>Aircraft/Grob-G115/Models/Interior/interior.xml</path>
   </model>
 
@@ -207,6 +233,12 @@
     <path>Aircraft/Grob-G115/Models/Immat/immat.xml</path>
   </model>
 
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+  
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
@@ -215,9 +247,7 @@
       <x-m> -2.296 </x-m>
       <y-m> -0.205 </y-m>
       <z-m> -0.811 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg>  45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -227,9 +257,7 @@
       <x-m> -2.296 </x-m>
       <y-m>  0.205 </y-m>
       <z-m> -0.811 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg>  45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -316,6 +344,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -337,12 +371,12 @@
     <property>surface-positions/rudder-pos-norm</property>
     <factor> 20 </factor>
     <axis>
-      <x1-m> 3.387 </x1-m>
-      <y1-m> 0.000 </y1-m>
-      <z1-m> 0.054 </z1-m>
-      <x2-m> 3.609 </x2-m>
-      <y2-m> 0.000 </y2-m>
-      <z2-m> 1.263 </z2-m>
+      <x1-m> 3.42625 </x1-m>
+      <y1-m> 0.00000 </y1-m>
+      <z1-m> 0.04751 </z1-m>
+      <x2-m> 3.63053 </x2-m>
+      <y2-m> 0.00000 </y2-m>
+      <z2-m> 1.26258 </z2-m>
     </axis>
   </animation>
 
@@ -353,9 +387,9 @@
     <property>surface-positions/elevator-pos-norm</property>
     <factor> 11 </factor>
     <center>
-      <x-m>  3.134 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.005 </z-m>
+      <x-m>  3.10541 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.00477 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -371,12 +405,12 @@
     <property>surface-positions/left-aileron-pos-norm</property>
     <factor> 15 </factor>
     <axis>
-      <x1-m> -0.916 </x1-m>
-      <y1-m> -4.817 </y1-m>
-      <z1-m> -0.266 </z1-m>
-      <x2-m> -0.781 </x2-m>
-      <y2-m> -3.327 </y2-m>
-      <z2-m> -0.383 </z2-m>
+      <x1-m> -0.90775 </x1-m>
+      <y1-m> -4.81745 </y1-m>
+      <z1-m> -0.26555 </z1-m>
+      <x2-m> -0.76529 </x2-m>
+      <y2-m> -3.32880 </y2-m>
+      <z2-m> -0.38301 </z2-m>
     </axis>
   </animation> 
 
@@ -386,12 +420,12 @@
     <property>surface-positions/right-aileron-pos-norm</property>
     <factor> 15 </factor>
     <axis>
-      <x1-m> -0.781 </x1-m>
-      <y1-m>  3.327 </y1-m>
-      <z1-m> -0.383 </z1-m>
-      <x2-m> -0.916 </x2-m>
-      <y2-m>  4.817 </y2-m>
-      <z2-m> -0.266 </z2-m>
+      <x1-m> -0.76529 </x1-m>
+      <y1-m>  3.32880 </y1-m>
+      <z1-m> -0.38301 </z1-m>
+      <x2-m> -0.90775 </x2-m>
+      <y2-m>  4.81745 </y2-m>
+      <z2-m> -0.26555 </z2-m>
     </axis>
   </animation>
 
@@ -591,9 +625,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>Canopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>Canopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 1 </factor>
     <axis>
       <x> 1 </x>
@@ -674,4 +722,3 @@
   </model>
 
 </PropertyList>
-
