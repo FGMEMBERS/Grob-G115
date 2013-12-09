@@ -346,7 +346,7 @@
     <object-name>HeliceComplete</object-name>
     <condition>
       <greater-than>
-        <property>engines/engine[0]/rpm</property>
+        <property>/engines/engine[0]/rpm</property>
         <value> 5 </value>
       </greater-than>
     </condition>
