@@ -9,6 +9,12 @@
     <object-name>Light</object-name>
   </animation>
 
+  <!-- Transparency for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Light</object-name>
+  </effect>
+
   <animation>
     <type>alpha-test</type>
     <alpha-factor>0.01</alpha-factor>
@@ -24,10 +30,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <and>
-        <property>/sim/model/lights/sbc1/state</property>
-        <property>/controls/circuit-breakers/nav-lights</property>
-      </and>
+      <property>/sim/model/lights/sbc1/state</property>
     </condition>
   </animation>
 
@@ -35,10 +38,10 @@
     <type>material</type>
     <object-name>Light</object-name>
     <emission>
-      <red>   1.0 </red>
-      <green> 1.0 </green>
-      <blue>  1.0 </blue>
       <factor-prop>/controls/lighting/nav-lights-norm</factor-prop>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
     </emission>
   </animation>
 
@@ -52,4 +55,15 @@
     </interpolation>
   </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+      <and>
+        <property>/sim/model/lights/sbc1/state</property>
+        <property>/controls/circuit-breakers/nav-lights</property>
+      </and>
+    </condition>
+  </animation>
+  
 </PropertyList>

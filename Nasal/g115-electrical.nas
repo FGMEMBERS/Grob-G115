@@ -242,16 +242,16 @@ update_virtual_bus = func( dt ) {
     # starter
     if (getprop("/systems/electrical/outputs/start-ctrl") > 16 ) {
         setprop("/systems/electrical/outputs/starter[0]", bus_volts);
-	if (getprop("/controls/switches/starter")==1) {
-	    load += 10.0;
-	}
+  if (getprop("/controls/switches/starter")==1) {
+      load += 10.0;
+  }
     } else {
         setprop("/systems/electrical/outputs/starter[0]", 0.0);
     }
 
     # flaps
     if ( getprop("/controls/circuit-breakers/flaps") ) {
-	setprop("/systems/electrical/outputs/flaps", bus_volts);
+  setprop("/systems/electrical/outputs/flaps", bus_volts);
     } else {
         setprop("/systems/electrical/outputs/flaps", 0.0);
     }
@@ -300,17 +300,17 @@ main_bus = func() {
 
     # fed from the "virtual" bus via the main bus breaker (30A)
     if ( getprop("/controls/circuit-breakers/main-bus") ) {
-    	main_bus_volts = vbus_volts;
+      main_bus_volts = vbus_volts;
     } else {
-	main_bus_volts = 0.0;
-    }	
+  main_bus_volts = 0.0;
+    } 
 
     load = 0.0;
 
     # Start Ctrl (7.5A)
     if ( getprop("/controls/circuit-breakers/start-ctrl") ) {
         setprop("/systems/electrical/outputs/start-ctrl", main_bus_volts);
-	load += 0.5;
+  load += 0.5;
     } else {
         setprop("/systems/electrical/outputs/start-ctrl", 0.0);
     }
@@ -318,7 +318,7 @@ main_bus = func() {
     # Gen Ctrl (3A)
     if ( getprop("/controls/circuit-breakers/gen-ctrl") ) {
         setprop("/systems/electrical/outputs/gen-ctrl", main_bus_volts);
-	load += 0.25;
+  load += 0.25;
     } else {
         setprop("/systems/electrical/outputs/gen-ctrl", 0.0);
     }
@@ -337,7 +337,7 @@ main_bus = func() {
     if ( getprop("/controls/circuit-breakers/strobe-red") and 
          strobeswitch==-1 ) {
         setprop("/systems/electrical/outputs/red-strobe", main_bus_volts);
-	load += 3;
+  load += 3;
     } else {
         setprop("/systems/electrical/outputs/red-strobe", 0.0);
     }
@@ -346,16 +346,16 @@ main_bus = func() {
     if ( getprop("/controls/circuit-breakers/panel-lights") ) {
         setprop("/systems/electrical/outputs/panel-lights", main_bus_volts);
         setprop("/controls/lighting/panel-norm", getprop("/systems/electrical/outputs/panel-lights") * getprop("/controls/lighting/panel-dim") * 0.041666);
-	load += 0.7*getprop("/controls/lighting/panel-dim");
+  load += 0.7*getprop("/controls/lighting/panel-dim");
     } else {
         setprop("/systems/electrical/outputs/panel-lights", 0.0);
-	setprop("/controls/lighting/panel-norm", 0.0);
+  setprop("/controls/lighting/panel-norm", 0.0);
     }
 
     # Avionic Blower (1A)
     if ( getprop("/controls/circuit-breakers/avionic-blower") ) {
         setprop("/systems/electrical/outputs/avionic-blower", main_bus_volts);
-	load += 0.45;
+  load += 0.45;
     } else {
         setprop("/systems/electrical/outputs/avionic-blower", 0.0);
     }
@@ -364,7 +364,7 @@ main_bus = func() {
     if ( getprop("/controls/circuit-breakers/pitot-heat") and
          getprop("/controls/switches/pitot-heat") ) {
         setprop("/systems/electrical/outputs/pitot-heat", main_bus_volts);
-	load += 2.5;
+  load += 2.5;
     } else {
         setprop("/systems/electrical/outputs/pitot-heat", 0.0);
     }
@@ -373,7 +373,7 @@ main_bus = func() {
     if ( getprop("/controls/circuit-breakers/fuel-pump") and
          getprop("/controls/engines/engine/fuel-pump") ) {
         setprop("/systems/electrical/outputs/fuel-pump", main_bus_volts);
-	load += 3;
+  load += 3;
     } else {
         setprop("/systems/electrical/outputs/fuel-pump", 0.0);
     }
@@ -381,7 +381,7 @@ main_bus = func() {
     # Eng Instr 2 (3A)
     if ( getprop("/controls/circuit-breakers/eng-instr-2") ) {
         setprop("/systems/electrical/outputs/eng-instr-2", main_bus_volts);
-	load += 0.12;
+  load += 0.12;
     } else {
         setprop("/systems/electrical/outputs/eng-instr-2", 0.0);
     }
@@ -393,28 +393,28 @@ main_bus = func() {
 
     # return cumulative load
     if ( getprop("/controls/circuit-breakers/main-bus") ) { 
-	 setprop("/systems/electrical/debug/main-load", load);
+   setprop("/systems/electrical/debug/main-load", load);
          setprop("/systems/electrical/debug/main-volts", main_bus_volts);
-	return load;
+  return load;
     } else {
-	return 0.0;
+  return 0.0;
     }
 }
 
 essential_bus = func() {
     # fed from the "virtual" bus via the ess bus breaker (15A)
     if ( getprop("/controls/circuit-breakers/ess-bus") ) {
-    	essential_bus_volts = vbus_volts;
+      essential_bus_volts = vbus_volts;
     } else {
-	essential_bus_volts = 0.0;
-    }	
+  essential_bus_volts = 0.0;
+    } 
 
     load = 0.0;
 
     # Landing Light (7.5A)
     if ( getprop("/controls/circuit-breakers/land-light") ) {
         setprop("/systems/electrical/outputs/land-light", essential_bus_volts);
-	load += 3.5;
+  load += 3.5;
     } else {
         setprop("/systems/electrical/outputs/land-light", 0.0);
     }
@@ -423,17 +423,17 @@ essential_bus = func() {
     if ( getprop("/controls/circuit-breakers/map-light") ) {
         setprop("/systems/electrical/outputs/map-light", essential_bus_volts);
         setprop("/controls/lighting/map-norm", essential_bus_volts * getprop("/controls/lighting/instruments-dim") * 0.041666);
-	load += 0.3*getprop("/controls/lighting/map-dim");
+  load += 0.3*getprop("/controls/lighting/map-dim");
     } else {
         setprop("/systems/electrical/outputs/map-light", 0.0);
     }
 
     # Nav Lights (7.5A)
     if ( getprop("/controls/circuit-breakers/nav-lights") and
-	 getprop("/controls/switches/nav-lights") ) {
+   getprop("/controls/switches/nav-lights") ) {
         setprop("/systems/electrical/outputs/nav-lights", essential_bus_volts);
         setprop("/controls/lighting/nav-lights-norm", getprop("/systems/electrical/outputs/nav-lights") * 0.041666);
-	load += 4.0;
+  load += 4.0;
     } else {
         setprop("/systems/electrical/outputs/nav-lights", 0.0);
         setprop("/controls/lighting/nav-lights-norm", 0.0);
@@ -442,26 +442,26 @@ essential_bus = func() {
     # Eng Instr 1 (3A)
     if ( getprop("/controls/circuit-breakers/eng-instr-1") ) {
         setprop("/systems/electrical/outputs/eng-instr-1", essential_bus_volts);
-	load += 0.05;
+  load += 0.05;
     } else {
         setprop("/systems/electrical/outputs/eng-instr-1", 0.0);
     }
 
     # Instr Lights (5A)
     if ( getprop("/controls/circuit-breakers/instr-lights") and
-	 getprop("/controls/switches/instr-lights") ) {
+   getprop("/controls/switches/instr-lights") ) {
         setprop("/systems/electrical/outputs/instr-lights", essential_bus_volts);
         setprop("/controls/lighting/instruments-norm", getprop("/systems/electrical/outputs/instr-lights") * getprop("/controls/lighting/instruments-dim") * 0.041666);
-	load += 1*getprop("/controls/lighting/instruments-dim");
+  load += 1*getprop("/controls/lighting/instruments-dim");
     } else {
         setprop("/systems/electrical/outputs/instr-lights", 0.0);
-	setprop("/controls/lighting/instruments-norm", 0.0);
+  setprop("/controls/lighting/instruments-norm", 0.0);
     }
 
     # RPM Ind (3A)
     if ( getprop("/controls/circuit-breakers/rpm-ind") ) {
         setprop("/systems/electrical/outputs/rpm-ind", essential_bus_volts);
-	load += 0.04;
+  load += 0.04;
     } else {
         setprop("/systems/electrical/outputs/rpm-ind", 0.0);
     }
@@ -473,13 +473,13 @@ essential_bus = func() {
         setprop("/systems/electrical/outputs/lo-volt-warning", 0.0);
     }
     if ( getprop("/instrumentation/warning-panel/lovolt-norm") > 0 ) {
-	load += 0.02;
+  load += 0.02;
     }
 
     # T&S (5A)
     if ( getprop("/controls/circuit-breakers/tands") ) {
         setprop("/systems/electrical/outputs/turn-coordinator", essential_bus_volts);
-	load += 0.3;
+  load += 0.3;
     } else {
         setprop("/systems/electrical/outputs/turn-coordinator", 0.0);
     }
@@ -491,13 +491,13 @@ essential_bus = func() {
         setprop("/systems/electrical/outputs/fuel-lo-lev", 0.0);
     }
     if ( getprop("/instrumentation/warning-panel/fuel-norm") > 0 ) {
-	load += 0.02;
+  load += 0.02;
     }
 
     # Att Indic 1 (3A)
     if ( getprop("/controls/circuit-breakers/att-indic-1") ) {
         setprop("/systems/electrical/outputs/att-indic-1", essential_bus_volts);
-	load += 0.6;
+  load += 0.6;
     } else {
         setprop("/systems/electrical/outputs/att-indic-1", 0.0);
     }
@@ -509,23 +509,23 @@ essential_bus = func() {
 
     # return cumulative load
     if ( getprop("/controls/circuit-breakers/ess-bus") ) { 
-	 setprop("/systems/electrical/debug/ess-load", load);
+   setprop("/systems/electrical/debug/ess-load", load);
          setprop("/systems/electrical/debug/ess-volts", main_bus_volts);
-	return load;
+  return load;
     } else {
-	 setprop("/systems/electrical/debug/ess-load", 0);
+   setprop("/systems/electrical/debug/ess-load", 0);
          setprop("/systems/electrical/debug/ess-volts", 0);
-	return 0.0;
+  return 0.0;
     };
 }
 
 avionic_bus_1 = func() {
     # fed from the "virtual" bus via the avionic bus 1 breaker (15A)
     if ( getprop("/controls/circuit-breakers/avionic-bus-1") ) {
-    	avionic_bus_1_volts = vbus_volts;
+      avionic_bus_1_volts = vbus_volts;
     } else {
-	main_bus_volts = 0.0;
-    }	
+  main_bus_volts = 0.0;
+    } 
 
     load = 0.0;
 
@@ -539,7 +539,7 @@ avionic_bus_1 = func() {
     # HSI (3A)
     if ( getprop("/controls/circuit-breakers/hsi") ) {
         setprop("/systems/electrical/outputs/hsi", avionic_bus_1_volts / 2);
-	load += 1.5;
+  load += 1.5;
     } else {
         setprop("/systems/electrical/outputs/hsi", 0.0);
     }
@@ -547,7 +547,7 @@ avionic_bus_1 = func() {
     # Alt Encoder (1A)
     if ( getprop("/controls/circuit-breakers/alt-encoder") ) {
         setprop("/systems/electrical/outputs/alt-encoder", avionic_bus_1_volts);
-	load += 1.2;
+  load += 1.2;
     } else {
         setprop("/systems/electrical/outputs/alt-encoder", 0.0);
     }
@@ -555,7 +555,7 @@ avionic_bus_1 = func() {
     # Xpdr (3A)
     if ( getprop("/controls/circuit-breakers/xpdr") ) {
         setprop("/systems/electrical/outputs/xpdr", avionic_bus_1_volts);
-	load += 0.1;
+  load += 0.1;
     } else {
         setprop("/systems/electrical/outputs/xpdr", 0.0);
     }
@@ -563,7 +563,7 @@ avionic_bus_1 = func() {
     # Nav1 (3A)
     if ( getprop("/controls/circuit-breakers/nav1") ) {
         setprop("/systems/electrical/outputs/nav1", avionic_bus_1_volts);
-	load += 0.35;
+  load += 0.35;
     } else {
         setprop("/systems/electrical/outputs/nav1", 0.0);
     }
@@ -571,9 +571,9 @@ avionic_bus_1 = func() {
     # Com1 (10A)
     if ( getprop("/controls/circuit-breakers/com1") ) {
         setprop("/systems/electrical/outputs/com1", avionic_bus_1_volts);
-	# Rx 0.6A
-	# Tx 8A
-	load += 0.6;
+  # Rx 0.6A
+  # Tx 8A
+  load += 0.6;
     } else {
         setprop("/systems/electrical/outputs/com1", 0.0);
     }
@@ -585,13 +585,13 @@ avionic_bus_1 = func() {
 
     # return cumulative load
     if ( getprop("/controls/circuit-breakers/avionic-bus-1") ) { 
-	 setprop("/systems/electrical/debug/ab1-load", load);
+   setprop("/systems/electrical/debug/ab1-load", load);
          setprop("/systems/electrical/debug/ab1-volts", avionic_bus_1_volts);
-	return load;
+  return load;
     } else {
-	 setprop("/systems/electrical/debug/ab1-load", 0);
+   setprop("/systems/electrical/debug/ab1-load", 0);
          setprop("/systems/electrical/debug/ab1-volts", 0);
-	return 0.0;
+  return 0.0;
     };
 
 }
@@ -599,17 +599,17 @@ avionic_bus_1 = func() {
 avionic_bus_2 = func() {
     # fed from the "virtual" bus via the avionic bus 2 breaker (15A)
     if ( getprop("/controls/circuit-breakers/avionic-bus-2") ) {
-    	avionic_bus_2_volts = vbus_volts;
+      avionic_bus_2_volts = vbus_volts;
     } else {
-	avionic_bus_2_volts = 0.0;
-    }	
+  avionic_bus_2_volts = 0.0;
+    } 
 
     load = 0.0;
 
     # GPS (3A)
     if ( getprop("/controls/circuit-breakers/gps") ) {
         setprop("/systems/electrical/outputs/gps", avionic_bus_2_volts);
-	load +=1;
+  load +=1;
     } else {
         setprop("/systems/electrical/outputs/gps", 0.0);
     }
@@ -617,9 +617,9 @@ avionic_bus_2 = func() {
     # Com2/Nav2 (10A)
     if ( getprop("/controls/circuit-breakers/com2nav2") ) {
         setprop("/systems/electrical/outputs/com2nav2", avionic_bus_2_volts);
-	# Rx 0.6A
-	# Tx 6A
-	load += 0.6;
+  # Rx 0.6A
+  # Tx 6A
+  load += 0.6;
     } else {
         setprop("/systems/electrical/outputs/com2nav2", 0.0);
     }
@@ -627,7 +627,7 @@ avionic_bus_2 = func() {
     # DME (3A)
     if ( getprop("/controls/circuit-breakers/dme") ) {
         setprop("/systems/electrical/outputs/dme", avionic_bus_2_volts);
-	load += 0.55;
+  load += 0.55;
     } else {
         setprop("/systems/electrical/outputs/dme", 0.0);
     }
@@ -635,9 +635,9 @@ avionic_bus_2 = func() {
     # Audio Marker (3A)
     if ( getprop("/controls/circuit-breakers/audio-marker") ) {
         setprop("/systems/electrical/outputs/audio-marker", avionic_bus_2_volts);
-	# Keep Instrumentation/marker_beacon.cxx happy
-	setprop("/systems/electrical/outputs/nav", avionic_bus_2_volts);
-	load += 0.5;
+  # Keep Instrumentation/marker_beacon.cxx happy
+  setprop("/systems/electrical/outputs/nav", avionic_bus_2_volts);
+  load += 0.5;
     } else {
         setprop("/systems/electrical/outputs/audio-marker", 0.0);
     }
@@ -645,7 +645,7 @@ avionic_bus_2 = func() {
     # Att Indic 2 (3A)
     if ( getprop("/controls/circuit-breakers/att-indic-2") ) {
         setprop("/systems/electrical/outputs/att-indic-2", avionic_bus_2_volts);
-	load += 1;
+  load += 1;
     } else {
         setprop("/systems/electrical/outputs/att-indic-2", 0.0);
     }
@@ -657,13 +657,13 @@ avionic_bus_2 = func() {
 
     # return cumulative load
     if ( getprop("/controls/circuit-breakers/avionic-bus-2") ) { 
-	setprop("/systems/electrical/debug/ab1-load", load);
+  setprop("/systems/electrical/debug/ab1-load", load);
         setprop("/systems/electrical/debug/ab1-volts", avionic_bus_2_volts);
-	return load;
+  return load;
     } else {
-	 setprop("/systems/electrical/debug/ab1-load", 0);
+   setprop("/systems/electrical/debug/ab1-load", 0);
          setprop("/systems/electrical/debug/ab1-volts", 0);
-	return 0.0;
+  return 0.0;
     };
 
 }

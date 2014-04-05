@@ -14,11 +14,13 @@
     <condition>
       <and>
         <greater-than>
-          <property>engines/engine[0]/rpm</property>
+          <!-- engines/engine[0]/rpm -->
+          <property>sim/multiplay/generic/float[4]</property>
           <value>30</value>
         </greater-than>
         <equals>
-          <property>engines/engine[0]/cranking</property>
+          <!-- engines/engine[0]/cranking -->
+          <property>sim/multiplay/generic/float[5]</property>
           <value>true</value>
         </equals>
       </and>
@@ -86,7 +88,7 @@
       </life-sec>
 
       <mass-kg>  0.02 </mass-kg>
-      <radius-m> 0.1 </radius-m>
+      <radius-m> 0.10 </radius-m>
     </particle>
 
     <program>
