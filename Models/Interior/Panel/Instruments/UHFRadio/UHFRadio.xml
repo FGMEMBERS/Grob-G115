@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>UHFRadio.ac</path>
+
+  <animation>
+    <object-name>Case</object-name>
+    <object-name>Screws</object-name>
+    <object-name>button</object-name>
+    <object-name>RedLED</object-name>
+    <object-name>basbutton</object-name>
+    <object-name>hautbutton</object-name>
+    <object-name>Cube</object-name>
+
+    <object-name>Screen</object-name>
+  </animation>
+
+</PropertyList>

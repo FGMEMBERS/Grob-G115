@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>ELT.ac</path>
+
+  <animation>
+    <object-name>Fond</object-name>
+    <object-name>Screws</object-name>
+    <object-name>Switch</object-name>
+    <object-name>Enable</object-name>
+    <object-name>LED</object-name>
+    <object-name>Reset</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>LED</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
+      <factor-prop>/instrumentation/elt/enabled</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Enable</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/instrumentation/elt/enabled</property>
+        <value type="int">1</value>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Reset</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/instrumentation/elt/enabled</property>
+        <value type="int">0</value>
+      </binding>          
+    </action>
+  </animation>
+                                
+</PropertyList>

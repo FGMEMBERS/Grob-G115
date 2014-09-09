@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Systems/views.xml">
+
+    <description>Grob G115 (YASim)</description>
+    <author>BARANGER Emmanuel (3D), Jon Stockill (FDM, Panel, texture)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Grob-G115/g115-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Grob-G115/Sounds/g115-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Grob-G115/Models/g115.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                         <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                        <!-- altitude for Smoke/Trail -->
+        <float n="4" alias="/engines/engine[0]/rpm"/>
+        <float n="5" alias="/engines/engine[0]/cranking"/>
+        <float n="6" alias="/gear/gear[0]/wow/"/>
+        <float n="7" alias="/gear/gear[1]/wow/"/>
+        <float n="8" alias="/gear/gear[2]/wow/"/>
+        <float n="9" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="Systems/help.xml"/>
+    
+    <menubar include="Dialogs/g115-menu.xml"/>
+
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+    
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>200</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Copilot</name>
+      <weight-lb>150</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Bagages</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>45</max-lb>
+    </weight>
+
+  </sim>
+
+  <input>
+    <keyboard include="Systems/g115-keyboard.xml"/>
+  </input>
+
+  <controls>
+    <lighting>
+      <instruments-norm>0.5</instruments-norm>
+      <panel-norm>0.5</panel-norm>
+    </lighting>
+  </controls>
+
+  <instrumentation>
+    <kcs55 include="Models/Interior/Panel/Instruments/kcs55/kcs55.xml"/>
+    <kcs55 n="0">
+      <ka51>
+        <slaved>true</slaved>
+      </ka51>
+    </kcs55>
+  </instrumentation>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/Grob-G115/Nasal/doors.nas</file>
+    </doors>
+    <zkv500>
+      <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
+    </zkv500>
+    <g115>
+      <file>Aircraft/Generic/limits.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/g115.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/liveries.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/immat.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/light.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/g115-electrical.nas</file>
+      <file>Aircraft/Grob-G115/Nasal/instruments.nas</file>
+      <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/WarningPanel/WarningPanel.nas</file>
+      <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/KMA26/KMA26.nas</file>
+      <file>Aircraft/Grob-G115/Models/Interior/Panel/Instruments/kcs55/kcs55.nas</file>
+        <script><![CDATA[
+          KCS55.new();
+          ]]>
+        </script>
+    </g115>
+  </nasal>
+
+</PropertyList>
